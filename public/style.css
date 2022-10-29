@@ -2,6 +2,7 @@
 
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 *{
@@ -14,7 +15,7 @@ html {
 
 body{
     overflow-x: hidden;
-    background-color: #efefef;
+    background-color: #ffffff;
 }
 
 ::selection {
@@ -23,4 +24,71 @@ body{
 
 ::-moz-selection {
     background: rgba(0, 0, 0, 0.39);
+}
+
+@media (min-width:1400px) {
+    .container{
+        max-width: 1320px;
+    }
+}
+
+@media (min-width:1200px) {
+    .container{
+        max-width: 1140px;
+    }
+}
+
+@media (min-width:992px) {
+    .container{
+        max-width: 960px;
+    }
+}
+
+@media (min-width:768px) {
+    .container{
+        max-width: 720px;
+    }
+}
+
+@media (min-width:576px) {
+    .container{
+        max-width: 540px;
+    }
+}
+
+.container{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+nav{
+    background-color: #a1a1a1;
+    border: 1px solid black;
+}
+
+.nav-flexbox{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.325rem;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+}
+
+nav li{
+    margin-left: 1rem;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+nav a:hover{
+    color: #d3d3d3;
 }
