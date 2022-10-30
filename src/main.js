@@ -1,12 +1,12 @@
 import { createApp } from 'vue'
 import App from './App.vue'
 import router from "@/router";
-import Vue from 'vue'
-import Vuesax from 'vuesax'
+import "bootstrap/dist/css/bootstrap.min.css"
+import "bootstrap"
+import Vuesax from 'vuesax3'
+import 'vuesax3/dist/vuesax.css' //Vuesax styles
 
-import 'vuesax/dist/vuesax.css' //Vuesax styles
-Vue.use(Vuesax, {
-    // options here
-})
-
-createApp(App).use(router).mount('#app')
+const app = createApp(App)
+    app.use(router)
+    app.use(Vuesax, {})
+    app.mount('#app')

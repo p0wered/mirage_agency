@@ -1,0 +1,12 @@
+/*additional css file*/
+
+@keyframes logo_slide {
+    0%{
+        opacity: 0;
+        margin-left: -2rem;
+    }
+    100%{
+        opacity: 100%;
+        margin-left: 0;
+    }
+}
