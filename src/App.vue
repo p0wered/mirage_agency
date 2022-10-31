@@ -6,13 +6,13 @@
             <div class="logo-box">
               <h1>MIRAGE</h1>
             </div>
-            <ul>
-              <li><router-link :to="{name:'home'}">HOME</router-link></li>
-              <li><router-link to="projects">PROJECTS</router-link></li>
-              <li><router-link to="pricing">PRICING</router-link></li>
-              <li><router-link to="news">NEWS</router-link></li>
-              <li><router-link to="contacts">CONTACTS</router-link></li>
-            </ul>
+              <ul>
+                <li><router-link :to="{name:'home'}">HOME</router-link></li>
+                <li><router-link to="projects">PROJECTS</router-link></li>
+                <li><router-link to="pricing">PRICING</router-link></li>
+                <li><router-link to="news">NEWS</router-link></li>
+                <li><router-link to="contacts">CONTACTS</router-link></li>
+              </ul>
           </div>
         </div>
       </nav>
