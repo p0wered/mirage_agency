@@ -22,6 +22,11 @@ const routes = [
         name: 'news',
         component: defineAsyncComponent(() => import('@/pages/NewsPage'))
     },
+    {
+        path: '/contacts',
+        name: 'contacts',
+        component: defineAsyncComponent(() => import('@/pages/ContactsPage'))
+    },
 ]
 
 const router = createRouter({

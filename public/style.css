@@ -36,6 +36,8 @@ body{
 }
 
 nav{
+    width: 100%;
+    position: fixed;
     background-color: #ffffff;
     border: 1px solid #f1f1f1;
 }
@@ -44,7 +46,7 @@ nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.325rem;
+    padding: 1rem;
 }
 
 nav ul{
@@ -71,6 +73,7 @@ nav a:hover{
 }
 
 nav h1{
+    margin: 0;
     font-weight: 600;
     transition: 400ms;
     animation: logo_slide 300ms;
@@ -80,8 +83,31 @@ nav h1:hover{
     color: #7b98ff;
 }
 
-.pr{
-    width: 1820px;
-    height: 980px;
-    background-color: bisque;
+nav h1:active{
+    transition: 100ms;
+}
+
+.home-section-1{
+    width: 100%;
+    height: 100vh;
+    background-color: #7b98ff;
+}
+
+.home-flexbox-1{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.home-section-2{
+    width: 100%;
+    height: 100vh;
+    background-color: #36467e;
+}
+
+.recommended-img{
+    width: 500px;
+    height: 500px;
 }

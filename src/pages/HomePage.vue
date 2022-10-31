@@ -1,20 +1,24 @@
 <template>
-  <div class="pr">
-    <TextComponent><h1>SSSS</h1></TextComponent>
-    <vs-button
-        :active="active == 0"
-        @click="active = 0"
-    >
-      Active
-    </vs-button>
+  <div>
+    <section class="home-section-1">
+      <div class="container">
+        <div class="home-flexbox-1">
+          <h3>Creative Agency</h3>
+          <h1>We Deliver The Best Product for You</h1>
+          <p>Design is the creation of a plan or convention for the construction of an object or a system as in architectural blueprints, engineering drawings and business processes</p>
+          <img class="recommended-img" src="src/assets/Recommended.png">
+        </div>
+      </div>
+    </section>
+    <section class="home-section-2">
+
+    </section>
   </div>
 </template>
 
 <script>
-import TextComponent from "@/components/TextComponent";
 export default {
   name: "HomePage",
-  components: {TextComponent}
 }
 </script>
 

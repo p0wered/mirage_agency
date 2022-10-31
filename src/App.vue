@@ -16,7 +16,6 @@
           </div>
         </div>
       </nav>
-    {{$route.name}}
     <router-view></router-view>
   </div>
 </template>
