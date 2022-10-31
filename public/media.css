@@ -10,3 +10,10 @@
         margin-left: 0;
     }
 }
+
+@media (max-width: 991px){
+    .home-flexbox-1{
+        flex-direction: column;
+        justify-content: center;
+    }
+}
