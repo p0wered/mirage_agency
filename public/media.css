@@ -11,9 +11,17 @@
     }
 }
 
-@media (max-width: 991px){
+@media (max-width: 766px){
     .home-flexbox-1{
+        padding-top: 4rem;
         flex-direction: column;
         justify-content: center;
+    }
+}
+
+@media (max-width: 766px){
+    .recommended-img{
+        margin: 0;
+        width: 87%;
     }
 }
