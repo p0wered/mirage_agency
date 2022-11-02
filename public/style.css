@@ -60,7 +60,7 @@ nav li{
 }
 
 nav a{
-    color: #37394f;
+    color: #56597a;
     position: relative;
     text-decoration: none;
     transition: 300ms;
@@ -90,6 +90,7 @@ nav h1:active{
 }
 
 .home-section-1{
+    color: #56597a;
     width: 100%;
     height: 100vh;
     background-color: #f1f1f1;
@@ -105,10 +106,6 @@ nav h1:active{
     justify-content: center;
 }
 
-.hf1-text{
-
-}
-
 .inner-title-sm{
     font-weight: bold;
     color: #7b98ff;
@@ -116,33 +113,31 @@ nav h1:active{
 }
 
 .inner-title-sm:hover{
-    margin-left: 1.125rem;
+    transform: translateX(1rem);
 }
 
 .inner-title-lg{
-    color: #56597a;
     font-size: 43px;
     transition: 300ms;
 }
 
 .inner-title-lg:hover{
-    margin-left: 1.125rem;
+    transform: translateX(1rem);
 }
 
 .inner-desc{
-    color: #56597a;
-    margin-right: 1rem;
     transition: 300ms;
 }
 
 .inner-desc:hover{
-    margin-left: 1.125rem;
+    transform: translateX(1rem);
 }
 
 .hf1-image-box{
+    height: 45%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 .recommended-img{
@@ -150,9 +145,17 @@ nav h1:active{
     transition: 300ms;
 }
 
+.recommended-img:hover{
+    transform: scale(110%);
+    transition: 300ms;
+}
+
 .home-section-2{
     width: 100%;
     height: 100vh;
-    background-color: #36467e;
+    background-color: #f1f1f1;
 }
+
+.hf2-text{}
+
 

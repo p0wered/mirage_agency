@@ -6,7 +6,7 @@
             <div class="logo-box">
               <h1>MIRAGE</h1>
             </div>
-              <ul>
+              <ul class="d-none d-lg-flex">
                 <li><router-link :to="{name:'home'}">HOME</router-link></li>
                 <li><router-link :to="{name:'projects'}">PROJECTS</router-link></li>
                 <li><router-link :to="{name:'pricing'}">PRICING</router-link></li>
