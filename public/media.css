@@ -15,5 +15,6 @@
     .home-flexbox-1{
         flex-direction: column;
         justify-content: flex-end;
+        height: 100vh;
     }
 }
