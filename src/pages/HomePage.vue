@@ -4,7 +4,7 @@
       <div class="container">
         <div class="home-flexbox-1">
           <div class="col-lg-5">
-            <h3 class="title-sm-1" style="color: #7b98ff;">Creative Agency</h3>
+            <h3 class="title-sm-1">Creative Agency</h3>
             <h1 class="title-lg-1">We Deliver The Best Product for You</h1>
             <p class="desc-1">Design is the creation of a plan or convention for the construction of an object or a system as in architectural blueprints, engineering drawings and business processes</p>
           </div>
@@ -15,11 +15,30 @@
       </div>
     </section>
     <section class="home-section-2">
-      <div class="container">
+      <div class="container-fluid">
         <div class="home-flexbox-2">
           <div class="hf2-text">
             <h3 class="title-sm-2">Our services</h3>
             <h1 class="title-lg-2">Why People Choose Us</h1>
+          </div>
+          <div class="block-row">
+            <div class="block-row-item">
+              <i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"></i>
+              <h3>Design</h3>
+              <p>a plan or drawing produced to show the look and function</p>
+            </div>
+            <div class="block-row-item">
+              <h3>Development</h3>
+              <p>development is defined as the process of growth or new </p>
+            </div>
+            <div class="block-row-item">
+              <h3>Branding</h3>
+              <p>The marketing practice of creating a name or symbol</p>
+            </div>
+            <div class="block-row-item">
+              <h3>Illustration</h3>
+              <p>An illustration is a decoration, interpretation or visual</p>
+            </div>
           </div>
         </div>
       </div>

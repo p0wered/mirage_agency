@@ -188,3 +188,17 @@ nav h1:active{
     transform: scale(103%);
 }
 
+.block-row{
+    display: flex;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.block-row-item{
+    width: calc(13rem + 3vw);
+    height: 20rem;
+    margin: 1rem;
+    background-color: rgba(201, 213, 255, 0.6);
+    text-align: center;
+}
+

@@ -14,7 +14,13 @@
 @media (max-width: 767px){
     .home-flexbox-1{
         flex-direction: column;
-        justify-content: flex-end;
+        justify-content: center;
         height: 100vh;
+    }
+}
+
+@media (max-width: 1199px){
+    .block-row-item{
+        width: calc(10rem + 3vw);
     }
 }
