@@ -1,15 +1,15 @@
 <template>
   <div>
-    <section class="home-section-left">
+    <section class="home-section-1">
       <div class="container">
-        <div class="home-flexbox-left">
+        <div class="home-flexbox-1">
           <div class="col-lg-5">
             <h3 class="title-sm-left">Creative Agency</h3>
             <h1 class="title-lg-left">We Deliver The Best Product for You</h1>
             <p class="desc">Design is the creation of a plan or convention for the construction of an object or a system as in architectural blueprints, engineering drawings and business processes</p>
           </div>
           <div class="hf-image-box">
-            <img alt="This is an image" class="recommended-img" src="../assets/Recommended.png">
+            <img alt="This is an image" class="recommended-img" src="../assets/Recommended.56c2bffe.webp">
           </div>
         </div>
       </div>
@@ -50,11 +50,11 @@
         </div>
       </div>
     </section>
-    <section class="home-section-right">
+    <section class="home-section-2">
       <div class="container">
-        <div class="home-flexbox-right">
+        <div class="home-flexbox-2">
           <div class="hf-image-box">
-            <img alt="This is an image" class="recommended-img" src="../assets/Design.png">
+            <img alt="This is an image" class="recommended-img" src="../assets/Design.059e9f72.webp">
           </div>
           <div class="col-lg-5">
             <h3 class="title-sm-left">Design Things</h3>
@@ -62,19 +62,24 @@
             <p class="desc">A creative concept is an overarching “Big Idea” that captures audience interest, influences their emotional response and inspires them to take action.It is a unifying theme that can be used across all campaign messages </p>
           </div>
         </div>
-      </div>
-    </section>
-    <section class="home-section-left">
-      <div class="container">
-        <div class="home-flexbox-left">
+        <div class="home-flexbox-3">
           <div class="col-lg-5">
             <h3 class="title-sm-left">Our Teamwork</h3>
             <h1 class="title-lg-left">We Believe Success Lies On Teamwork</h1>
             <p class="desc">Good teamwork means a synergistic way of working with each person committed and working towards a shared goal. It is therefore a necessity that leaders facilitate and build the teamwork skills of their people if they are</p>
           </div>
           <div class="hf-image-box">
-            <img alt="This is an image" class="recommended-img" src="../assets/Teamwork.png">
+            <img alt="This is an image" class="recommended-img" src="../assets/Teamwork.efec38b6.webp">
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="company-list">
+      <div class="container">
+        <div class="company-list-flexbox">
+          <img id="airbnb-logo" src="../assets/AirbnbLogo.svg">
+          <img id="google-logo" src="../assets/GoogleLogo.svg">
+          <img id="nat-geo-logo" src="../assets/NationalGeographicLogo.svg">
         </div>
       </div>
     </section>

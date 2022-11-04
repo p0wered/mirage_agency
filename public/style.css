@@ -98,7 +98,7 @@ nav h1:active{
     transition: 100ms;
 }
 
-.home-section-left{
+.home-section-1{
     color: #56597a;
     width: 100%;
     background-color: #f1f1f1;
@@ -106,7 +106,7 @@ nav h1:active{
     overflow-x: hidden;
 }
 
-.home-flexbox-left{
+.home-flexbox-1{
     height: 92vh;
     width: 100%;
     display: flex;
@@ -204,6 +204,7 @@ nav h1:active{
     padding: 2rem;
     height: 20rem;
     max-width: 17rem;
+    min-width: 16rem;
     transition: 300ms;
     text-align: center;
     border-radius: 1rem;
@@ -236,7 +237,7 @@ nav h1:active{
     color: #f1f1f1;
 }
 
-.home-section-right{
+.home-section-2{
     color: #56597a;
     width: 100%;
     background-color: #f1f1f1;
@@ -244,12 +245,76 @@ nav h1:active{
     overflow-x: hidden;
 }
 
-.home-flexbox-right{
-    height: 80vh;
+.home-flexbox-2{
+    height: auto;
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
+    padding: 5rem 0 5rem 0;
     justify-content: center;
 }
+
+.home-flexbox-3{
+    height: auto;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    padding: 5rem 0 5rem 0;
+    justify-content: center;
+}
+
+.company-list{
+    color: #56597a;
+    width: 100%;
+    background-color: #f1f1f1;
+    cursor: default;
+    overflow-x: hidden;
+}
+
+.company-list-flexbox{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+}
+
+#airbnb-logo{
+    width: 20rem;
+    filter: grayscale(100%);
+    transition: 300ms;
+}
+
+#airbnb-logo:hover{
+    transform: scale(105%);
+    filter: none;
+}
+
+#google-logo{
+    width: 20rem;
+    filter: grayscale(100%);
+    transition: 300ms;
+}
+
+#google-logo:hover{
+    transform: scale(105%);
+    filter: none;
+}
+
+#nat-geo-logo{
+    width: 20rem;
+    filter: grayscale(100%);
+    transition: 300ms;
+}
+
+#nat-geo-logo:hover{
+    transform: scale(105%);
+    filter: none;
+}
+
+
+
+
 
