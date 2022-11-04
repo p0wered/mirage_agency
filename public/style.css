@@ -203,12 +203,35 @@ nav h1:active{
     padding: 2rem;
     height: 20rem;
     max-width: 17rem;
+    transition: 300ms;
     text-align: center;
     border-radius: 1rem;
     align-items: center;
     flex-direction: column;
     justify-content: inherit;
     background-color: rgba(201, 213, 255, 0.6);
+}
+
+.block-row-item:hover{
+    color: #f1f1f1;
+    transform: scale(105%);
+    background-color: #8aa3ff;
+}
+
+.block-title{
+    font-weight: 600;
+}
+
+.block-row-item a{
+    color: #56597a;
+    position: relative;
+    text-decoration: none;
+    transition: 300ms;
+}
+
+.block-row-item a:hover{
+    text-decoration: underline;
+    color: #f1f1f1;
 }
 
 
