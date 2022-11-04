@@ -12,23 +12,35 @@
 }
 
 @media (max-height: 830px){
-    .home-section-1{
+    .home-section-left{
         padding-top: 4rem;
     }
 }
 
 @media (max-width: 767px){
-    .home-flexbox-1{
+    .home-flexbox-left{
         flex-direction: column;
         justify-content: flex-end;
         height: auto;
-        margin: 8.125rem 0 2.125rem 0;
+        margin: 5.125rem 0 2.125rem 0;
     }
 }
 
 @media (max-width: 1199px){
+    .block-row-item{
+        max-width: 30rem;
+        min-width: 15rem;
+    }
     .block-row{
         flex-direction: column;
         align-items: center;
+    }
+}
+
+@media (max-width: 767px){
+    .home-flexbox-right{
+        flex-direction: column-reverse;
+        justify-content: flex-end;
+        height: auto;
     }
 }

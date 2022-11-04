@@ -1,25 +1,25 @@
 <template>
   <div>
-    <section class="home-section-1">
+    <section class="home-section-left">
       <div class="container">
-        <div class="home-flexbox-1">
+        <div class="home-flexbox-left">
           <div class="col-lg-5">
-            <h3 class="title-sm-1">Creative Agency</h3>
-            <h1 class="title-lg-1">We Deliver The Best Product for You</h1>
-            <p class="desc-1">Design is the creation of a plan or convention for the construction of an object or a system as in architectural blueprints, engineering drawings and business processes</p>
+            <h3 class="title-sm-left">Creative Agency</h3>
+            <h1 class="title-lg-left">We Deliver The Best Product for You</h1>
+            <p class="desc">Design is the creation of a plan or convention for the construction of an object or a system as in architectural blueprints, engineering drawings and business processes</p>
           </div>
-          <div class="hf1-image-box">
+          <div class="hf-image-box">
             <img alt="This is an image" class="recommended-img" src="../assets/Recommended.png">
           </div>
         </div>
       </div>
     </section>
-    <section class="home-section-2">
+    <section class="home-section-row">
       <div class="container">
-        <div class="home-flexbox-2">
+        <div class="home-flexbox-row">
           <div class="hf2-text">
-            <h3 class="title-sm-2">Our services</h3>
-            <h1 class="title-lg-2">Why People Choose Us</h1>
+            <h3 class="title-sm-row">Our services</h3>
+            <h1 class="title-lg-row">Why People Choose Us</h1>
           </div>
           <div class="block-row">
             <div class="block-row-item">
@@ -41,7 +41,7 @@
               <router-link :to="{name:'projects'}">LEARN MORE</router-link>
             </div>
             <div class="block-row-item">
-              <i style="font-size: 3rem" class="bi bi-balloon-heart"></i>
+              <i style="font-size: 3rem;" class="bi bi-balloon-heart"></i>
               <h3 class="block-title">Illustration</h3>
               <p>An illustration is a decoration, interpretation or visual</p>
               <router-link :to="{name:'projects'}">LEARN MORE</router-link>
@@ -50,16 +50,30 @@
         </div>
       </div>
     </section>
-    <section class="home-section-1">
+    <section class="home-section-right">
       <div class="container">
-        <div class="home-flexbox-1">
-          <div class="hf1-image-box">
-            <img alt="This is an image" class="recommended-img" src="../assets/Recommended.png">
+        <div class="home-flexbox-right">
+          <div class="hf-image-box">
+            <img alt="This is an image" class="recommended-img" src="../assets/Design.png">
           </div>
           <div class="col-lg-5">
-            <h3 class="title-sm-1">Creative Agency</h3>
-            <h1 class="title-lg-1">We Deliver The Best Product for You</h1>
-            <p class="desc-1">Design is the creation of a plan or convention for the construction of an object or a system as in architectural blueprints, engineering drawings and business processes</p>
+            <h3 class="title-sm-left">Design Things</h3>
+            <h1 class="title-lg-left">We Loves To Design Your Creative Ideas</h1>
+            <p class="desc">A creative concept is an overarching “Big Idea” that captures audience interest, influences their emotional response and inspires them to take action.It is a unifying theme that can be used across all campaign messages </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-section-left">
+      <div class="container">
+        <div class="home-flexbox-left">
+          <div class="col-lg-5">
+            <h3 class="title-sm-left">Our Teamwork</h3>
+            <h1 class="title-lg-left">We Believe Success Lies On Teamwork</h1>
+            <p class="desc">Good teamwork means a synergistic way of working with each person committed and working towards a shared goal. It is therefore a necessity that leaders facilitate and build the teamwork skills of their people if they are</p>
+          </div>
+          <div class="hf-image-box">
+            <img alt="This is an image" class="recommended-img" src="../assets/Teamwork.png">
           </div>
         </div>
       </div>

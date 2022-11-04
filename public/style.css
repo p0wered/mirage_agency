@@ -13,6 +13,7 @@ html {
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
     -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 body{
@@ -22,11 +23,11 @@ body{
 }
 
 ::selection {
-    background: rgba(0, 0, 0, 0.39);
+    background: rgba(123, 152, 255, 0.2);
 }
 
 ::-moz-selection {
-    background: rgba(0, 0, 0, 0.39);
+    background: rgba(123, 152, 255, 0.2);
 }
 
 .container{
@@ -97,7 +98,7 @@ nav h1:active{
     transition: 100ms;
 }
 
-.home-section-1{
+.home-section-left{
     color: #56597a;
     width: 100%;
     background-color: #f1f1f1;
@@ -105,7 +106,7 @@ nav h1:active{
     overflow-x: hidden;
 }
 
-.home-flexbox-1{
+.home-flexbox-left{
     height: 92vh;
     width: 100%;
     display: flex;
@@ -114,35 +115,35 @@ nav h1:active{
     justify-content: center;
 }
 
-.title-sm-1{
+.title-sm-left{
     font-weight: bold;
     color: #7b98ff;
     transition: 300ms;
 }
 
-.title-sm-1:hover{
+.title-sm-left:hover{
     transform: translateX(1rem);
 }
 
-.title-lg-1{
+.title-lg-left{
     transition: 300ms;
     font-size: calc(29px + 1vw);
 }
 
-.title-lg-1:hover{
+.title-lg-left:hover{
     transform: translateX(1rem);
 }
 
-.desc-1{
+.desc{
     font-size: 18px;
     transition: 300ms;
 }
 
-.desc-1:hover{
+.desc:hover{
     transform: translateX(1rem);
 }
 
-.hf1-image-box{
+.hf-image-box{
     height: 40%;
     display: flex;
     align-items: center;
@@ -159,7 +160,7 @@ nav h1:active{
     transform: scale(103%);
 }
 
-.home-section-2{
+.home-section-row{
     width: 100%;
     height: auto;
     color: #56597a;
@@ -172,22 +173,22 @@ nav h1:active{
     text-align: center;
 }
 
-.title-sm-2{
+.title-sm-row{
     color: #7b98ff;
     transition: 300ms;
     font-weight: bold;
 }
 
-.title-sm-2:hover{
+.title-sm-row:hover{
     transform: scale(103%);
 }
 
-.title-lg-2{
+.title-lg-row{
     transition: 300ms;
     font-size: calc(29px + 1vw);
 }
 
-.title-lg-2:hover{
+.title-lg-row:hover{
     transform: scale(103%);
 }
 
@@ -227,6 +228,7 @@ nav h1:active{
     position: relative;
     text-decoration: none;
     transition: 300ms;
+    font-weight: 500;
 }
 
 .block-row-item a:hover{
@@ -234,5 +236,20 @@ nav h1:active{
     color: #f1f1f1;
 }
 
+.home-section-right{
+    color: #56597a;
+    width: 100%;
+    background-color: #f1f1f1;
+    cursor: default;
+    overflow-x: hidden;
+}
 
+.home-flexbox-right{
+    height: 80vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+}
 
