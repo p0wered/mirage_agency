@@ -15,7 +15,7 @@
       </div>
     </section>
     <section class="home-section-2">
-      <div class="container-fluid">
+      <div class="container">
         <div class="home-flexbox-2">
           <div class="hf2-text">
             <h3 class="title-sm-2">Our services</h3>
@@ -23,19 +23,22 @@
           </div>
           <div class="block-row">
             <div class="block-row-item">
-              <i class="bi-alarm" style="font-size: 2rem; color: cornflowerblue;"></i>
+              <i style="font-size: 3rem" class="bi bi-columns"></i>
               <h3>Design</h3>
               <p>a plan or drawing produced to show the look and function</p>
             </div>
             <div class="block-row-item">
+              <i style="font-size: 3rem" class="bi bi-cpu"></i>
               <h3>Development</h3>
               <p>development is defined as the process of growth or new </p>
             </div>
             <div class="block-row-item">
+              <i style="font-size: 3rem;" class="bi bi-briefcase"></i>
               <h3>Branding</h3>
               <p>The marketing practice of creating a name or symbol</p>
             </div>
             <div class="block-row-item">
+              <i style="font-size: 3rem" class="bi bi-balloon-heart"></i>
               <h3>Illustration</h3>
               <p>An illustration is a decoration, interpretation or visual</p>
             </div>

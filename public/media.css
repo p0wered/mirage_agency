@@ -11,16 +11,24 @@
     }
 }
 
+@media (max-height: 830px){
+    .home-section-1{
+        padding-top: 4rem;
+    }
+}
+
 @media (max-width: 767px){
     .home-flexbox-1{
         flex-direction: column;
-        justify-content: center;
-        height: 100vh;
+        justify-content: flex-end;
+        height: auto;
+        margin: 8.125rem 0 2.125rem 0;
     }
 }
 
 @media (max-width: 1199px){
-    .block-row-item{
-        width: calc(10rem + 3vw);
+    .block-row{
+        flex-direction: column;
+        align-items: center;
     }
 }

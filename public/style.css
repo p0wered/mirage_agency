@@ -102,10 +102,11 @@ nav h1:active{
     width: 100%;
     background-color: #f1f1f1;
     cursor: default;
+    overflow-x: hidden;
 }
 
 .home-flexbox-1{
-    height: 88vh;
+    height: 92vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -124,8 +125,8 @@ nav h1:active{
 }
 
 .title-lg-1{
-    font-size: calc(29px + 1vw);
     transition: 300ms;
+    font-size: calc(29px + 1vw);
 }
 
 .title-lg-1:hover{
@@ -142,26 +143,28 @@ nav h1:active{
 }
 
 .hf1-image-box{
-    height: 45%;
+    height: 40%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
 }
 
 .recommended-img{
-    width: calc(250px + 11vw);
     transition: 300ms;
+    width: calc(250px + 11vw);
 }
 
 .recommended-img:hover{
-    transform: scale(103%);
     transition: 300ms;
+    transform: scale(103%);
 }
 
 .home-section-2{
     width: 100%;
     height: auto;
     color: #56597a;
+    cursor: default;
+    overflow-x: hidden;
     background-color: #f1f1f1;
 }
 
@@ -170,9 +173,9 @@ nav h1:active{
 }
 
 .title-sm-2{
-    font-weight: bold;
     color: #7b98ff;
     transition: 300ms;
+    font-weight: bold;
 }
 
 .title-sm-2:hover{
@@ -180,8 +183,8 @@ nav h1:active{
 }
 
 .title-lg-2{
-    font-size: calc(29px + 1vw);
     transition: 300ms;
+    font-size: calc(29px + 1vw);
 }
 
 .title-lg-2:hover{
@@ -189,16 +192,24 @@ nav h1:active{
 }
 
 .block-row{
+    margin: 1rem;
     display: flex;
     justify-content: center;
-    margin: 1rem;
 }
 
 .block-row-item{
-    width: calc(13rem + 3vw);
-    height: 20rem;
     margin: 1rem;
-    background-color: rgba(201, 213, 255, 0.6);
+    display: flex;
+    padding: 2rem;
+    height: 20rem;
+    max-width: 17rem;
     text-align: center;
+    border-radius: 1rem;
+    align-items: center;
+    flex-direction: column;
+    justify-content: inherit;
+    background-color: rgba(201, 213, 255, 0.6);
 }
+
+
 
