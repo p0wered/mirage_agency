@@ -66,6 +66,10 @@ nav li:active{
     transform: scale(90%);
 }
 
+.bi-list{
+    color: #56597a;
+    font-size: 40px;
+}
 
 nav a{
     color: #56597a;
@@ -98,7 +102,7 @@ nav h1:active{
     transition: 100ms;
 }
 
-.home-section-1{
+.home-section{
     color: #56597a;
     width: 100%;
     background-color: #f1f1f1;
@@ -106,13 +110,16 @@ nav h1:active{
     overflow-x: hidden;
 }
 
-.home-flexbox-1{
-    height: 92vh;
+.home-flexbox{
     width: 100%;
     display: flex;
     align-items: center;
     flex-direction: row;
     justify-content: center;
+}
+
+.hf-1{
+    height: 92vh;
 }
 
 .title-sm-left{
@@ -160,13 +167,8 @@ nav h1:active{
     transform: scale(103%);
 }
 
-.home-section-row{
-    width: 100%;
+.hs-row{
     height: auto;
-    color: #56597a;
-    cursor: default;
-    overflow-x: hidden;
-    background-color: #f1f1f1;
 }
 
 .hf2-text{
@@ -237,32 +239,12 @@ nav h1:active{
     color: #f1f1f1;
 }
 
-.home-section-2{
-    color: #56597a;
-    width: 100%;
-    background-color: #f1f1f1;
-    cursor: default;
-    overflow-x: hidden;
+.hf-2{
+    padding: 5rem 0 2rem 0;
 }
 
-.home-flexbox-2{
-    height: auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
+.hf-3{
     padding: 5rem 0 5rem 0;
-    justify-content: center;
-}
-
-.home-flexbox-3{
-    height: auto;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    padding: 5rem 0 5rem 0;
-    justify-content: center;
 }
 
 .company-list{
@@ -274,47 +256,19 @@ nav h1:active{
 }
 
 .company-list-flexbox{
-    width: 100%;
     display: flex;
-    justify-content: space-evenly;
     align-items: center;
-    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 3rem;
 }
 
-#airbnb-logo{
-    width: 20rem;
+.company-logo{
+    width: 12rem;
     filter: grayscale(100%);
     transition: 300ms;
 }
 
-#airbnb-logo:hover{
+.company-logo:hover{
     transform: scale(105%);
     filter: none;
 }
-
-#google-logo{
-    width: 20rem;
-    filter: grayscale(100%);
-    transition: 300ms;
-}
-
-#google-logo:hover{
-    transform: scale(105%);
-    filter: none;
-}
-
-#nat-geo-logo{
-    width: 20rem;
-    filter: grayscale(100%);
-    transition: 300ms;
-}
-
-#nat-geo-logo:hover{
-    transform: scale(105%);
-    filter: none;
-}
-
-
-
-
-

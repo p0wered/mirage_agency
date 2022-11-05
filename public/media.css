@@ -11,26 +11,29 @@
     }
 }
 
-@media (max-height: 830px){
-    .home-section-1{
+@media (max-height: 830px) and (min-width: 1830px){
+    .hs-1{
         padding-top: 4rem;
     }
 }
 
 @media (max-width: 767px){
-    .home-flexbox-1{
+    .nav-flexbox{
+        padding: 0.325rem;
+    }
+    .hf-1{
         flex-direction: column;
         justify-content: flex-end;
         height: auto;
         margin: 5.125rem 0 2.125rem 0;
     }
-    .home-flexbox-2{
+    .hf-2{
         padding: 0;
         flex-direction: column-reverse;
         justify-content: flex-end;
     }
-    .home-flexbox-3{
-        padding: 0;
+    .hf-3{
+        padding: 0 0 3rem 0;
         flex-direction: column;
         justify-content: flex-end;
     }

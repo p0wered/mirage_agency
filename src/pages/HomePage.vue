@@ -1,8 +1,8 @@
 <template>
   <div>
-    <section class="home-section-1">
+    <section class="home-section hs-1">
       <div class="container">
-        <div class="home-flexbox-1">
+        <div class="home-flexbox hf-1">
           <div class="col-lg-5">
             <h3 class="title-sm-left">Creative Agency</h3>
             <h1 class="title-lg-left">We Deliver The Best Product for You</h1>
@@ -14,7 +14,7 @@
         </div>
       </div>
     </section>
-    <section class="home-section-row">
+    <section class="home-section hs-row">
       <div class="container">
         <div class="home-flexbox-row">
           <div class="hf2-text">
@@ -50,9 +50,9 @@
         </div>
       </div>
     </section>
-    <section class="home-section-2">
+    <section class="home-section">
       <div class="container">
-        <div class="home-flexbox-2">
+        <div class="home-flexbox hf-2">
           <div class="hf-image-box">
             <img alt="This is an image" class="recommended-img" src="../assets/Design.059e9f72.webp">
           </div>
@@ -62,7 +62,7 @@
             <p class="desc">A creative concept is an overarching “Big Idea” that captures audience interest, influences their emotional response and inspires them to take action.It is a unifying theme that can be used across all campaign messages </p>
           </div>
         </div>
-        <div class="home-flexbox-3">
+        <div class="home-flexbox hf-3">
           <div class="col-lg-5">
             <h3 class="title-sm-left">Our Teamwork</h3>
             <h1 class="title-lg-left">We Believe Success Lies On Teamwork</h1>
@@ -77,9 +77,11 @@
     <section class="company-list">
       <div class="container">
         <div class="company-list-flexbox">
-          <img id="airbnb-logo" src="../assets/AirbnbLogo.svg">
-          <img id="google-logo" src="../assets/GoogleLogo.svg">
-          <img id="nat-geo-logo" src="../assets/NationalGeographicLogo.svg">
+          <img class="company-logo" src="../assets/AirbnbLogo.svg" alt="This Is An Image">
+          <img class="company-logo" src="../assets/GoogleLogo.svg" alt="This Is An Image">
+          <img class="company-logo" src="../assets/NationalGeographicLogo.svg" alt="This Is An Image">
+          <img class="company-logo" src="../assets/SpotifyLogo.svg" alt="This Is An Image">
+          <img class="company-logo" src="../assets/TinkoffLogo.svg" alt="This Is An Image">
         </div>
       </div>
     </section>
