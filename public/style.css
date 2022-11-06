@@ -119,7 +119,7 @@ nav h1:active{
 }
 
 .hf-1{
-    height: 92vh;
+    padding: 10rem 0 10rem 0;
 }
 
 .title-sm-left{
@@ -281,7 +281,7 @@ nav h1:active{
 }
 
 .hs-blog{
-    min-height: 50vh;
+    min-height: 30rem;
 
 }
 

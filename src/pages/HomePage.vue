@@ -100,8 +100,8 @@
           <p class="desc-row col-12 col-lg-7">A newsletter is a tool used to communicate regularly with your subscribers, delivering
             the information</p>
           <div class="input-flexbox">
-            <input class="blog-input col-12 col-lg-5" type="email" placeholder="Your Email Address Here">
-            <button class="blog-btn col-6 col-lg-3">Send now</button>
+            <input class="blog-input col-12 col-md-8 col-lg-5" type="email" placeholder="Your Email Address Here">
+            <button class="blog-btn col-8 col-md-4 col-lg-3">Send now</button>
           </div>
         </div>
       </div>

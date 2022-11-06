@@ -26,6 +26,7 @@
         justify-content: flex-end;
         height: auto;
         margin: 5.125rem 0 2.125rem 0;
+        padding: 0;
     }
     .hf-2{
         padding: 0;
@@ -46,7 +47,9 @@
         width: calc(13rem + 6vw);
         margin: 1rem 0 1rem 0;
     }
-    .
+    .input-flexbox{
+        flex-direction: column;
+    }
 }
 
 @media (max-width: 1199px){
