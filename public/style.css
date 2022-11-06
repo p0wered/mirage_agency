@@ -144,6 +144,7 @@ nav h1:active{
 .desc{
     font-size: 18px;
     transition: 300ms;
+    color: #84849b;
 }
 
 .desc:hover{
@@ -187,7 +188,7 @@ nav h1:active{
 
 .title-lg-row{
     transition: 300ms;
-    font-size: calc(29px + 1vw);
+    font-size: calc(27px + 1vw);
 }
 
 .title-lg-row:hover{
@@ -262,13 +263,92 @@ nav h1:active{
     padding: 3rem;
 }
 
+.cl-row{
+    justify-content: center;
+    flex-direction: column;
+}
+
 .company-logo{
-    width: 12rem;
+    width: calc(5rem + 6vw);
     filter: grayscale(100%);
     transition: 300ms;
+    margin: 0 1rem 0 1rem;
 }
 
 .company-logo:hover{
     transform: scale(105%);
     filter: none;
+}
+
+.hs-blog{
+    min-height: 50vh;
+
+}
+
+.hf-blog{
+    text-align: center;
+    flex-direction: column;
+    padding: 2rem 0 2rem 0;
+}
+
+.desc-row{
+    font-size: 18px;
+    transition: 300ms;
+    color: #84849b;
+}
+
+.desc-row:hover{
+    transform: scale(105%);
+}
+
+.input-flexbox{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.blog-input{
+    font-size: 22px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    padding: 1rem;
+    transition: 300ms;
+    text-align: center;
+    margin: 0.625rem;
+}
+
+.blog-input:focus{
+    transform: scale(103%);
+}
+
+.blog-btn{
+    font-size: 22px;
+    padding: 1rem;
+    transition: 200ms;
+    text-align: center;
+    border: none;
+    border-radius: 12px;
+    margin: 0.625rem;
+    background-color: rgba(201, 213, 255, 0.6);
+}
+
+.blog-btn:hover{
+    transform: scale(104%);
+    background-color: #7b98ff;
+}
+
+.blog-btn:active{
+    transform: scale(100%);
+}
+
+footer{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+    padding: 1.325rem;
+    background-color: #7b98ff;
 }

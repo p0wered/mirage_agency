@@ -6,7 +6,8 @@
           <div class="col-lg-5">
             <h3 class="title-sm-left">Creative Agency</h3>
             <h1 class="title-lg-left">We Deliver The Best Product for You</h1>
-            <p class="desc">Design is the creation of a plan or convention for the construction of an object or a system as in architectural blueprints, engineering drawings and business processes</p>
+            <p class="desc">Design is the creation of a plan or convention for the construction of an object or a system
+              as in architectural blueprints, engineering drawings and business processes</p>
           </div>
           <div class="hf-image-box">
             <img alt="This is an image" class="recommended-img" src="../assets/Recommended.56c2bffe.webp">
@@ -59,14 +60,18 @@
           <div class="col-lg-5">
             <h3 class="title-sm-left">Design Things</h3>
             <h1 class="title-lg-left">We Loves To Design Your Creative Ideas</h1>
-            <p class="desc">A creative concept is an overarching “Big Idea” that captures audience interest, influences their emotional response and inspires them to take action.It is a unifying theme that can be used across all campaign messages </p>
+            <p class="desc">A creative concept is an overarching “Big Idea” that captures audience interest, influences
+              their emotional response and inspires them to take action.It is a unifying theme that can be used across
+              all campaign messages </p>
           </div>
         </div>
         <div class="home-flexbox hf-3">
           <div class="col-lg-5">
             <h3 class="title-sm-left">Our Teamwork</h3>
             <h1 class="title-lg-left">We Believe Success Lies On Teamwork</h1>
-            <p class="desc">Good teamwork means a synergistic way of working with each person committed and working towards a shared goal. It is therefore a necessity that leaders facilitate and build the teamwork skills of their people if they are</p>
+            <p class="desc">Good teamwork means a synergistic way of working with each person committed and working
+              towards a shared goal. It is therefore a necessity that leaders facilitate and build the teamwork skills
+              of their people if they are</p>
           </div>
           <div class="hf-image-box">
             <img alt="This is an image" class="recommended-img" src="../assets/Teamwork.efec38b6.webp">
@@ -76,16 +81,36 @@
     </section>
     <section class="company-list">
       <div class="container">
-        <div class="company-list-flexbox">
-          <img class="company-logo" src="../assets/AirbnbLogo.svg" alt="This Is An Image">
-          <img class="company-logo" src="../assets/GoogleLogo.svg" alt="This Is An Image">
-          <img class="company-logo" src="../assets/NationalGeographicLogo.svg" alt="This Is An Image">
-          <img class="company-logo" src="../assets/SpotifyLogo.svg" alt="This Is An Image">
-          <img class="company-logo" src="../assets/TinkoffLogo.svg" alt="This Is An Image">
+        <div class="company-list-flexbox cl-row">
+          <h3 class="title-sm-row">Our Partners</h3>
+          <div class="company-list-flexbox">
+            <img class="company-logo" src="../assets/AirbnbLogo.svg" alt="This Is An Image">
+            <img class="company-logo" src="../assets/GoogleLogo.svg" alt="This Is An Image">
+            <img class="company-logo" src="../assets/NationalGeographicLogo.svg" alt="This Is An Image">
+            <img class="company-logo" src="../assets/SpotifyLogo.svg" alt="This Is An Image">
+            <img class="company-logo" src="../assets/TinkoffLogo.svg" alt="This Is An Image">
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="home-section hs-blog">
+      <div class="container">
+        <div class="home-flexbox hf-blog">
+          <h1 class="title-lg-row">Subscribe To Our Blog</h1>
+          <p class="desc-row col-12 col-lg-7">A newsletter is a tool used to communicate regularly with your subscribers, delivering
+            the information</p>
+          <div class="input-flexbox">
+            <input class="blog-input col-12 col-lg-5" type="email" placeholder="Your Email Address Here">
+            <button class="blog-btn col-6 col-lg-3">Send now</button>
+          </div>
         </div>
       </div>
     </section>
   </div>
+  <footer>
+    <i class="bi bi-c-circle"></i>
+    <p style="margin: 0 0 0 1rem">All Rights Served By MIRAGE {{new Date().getFullYear()}}</p>
+  </footer>
 </template>
 
 <script>

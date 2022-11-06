@@ -33,10 +33,20 @@
         justify-content: flex-end;
     }
     .hf-3{
-        padding: 0 0 3rem 0;
+        padding: 0 0 2rem 0;
         flex-direction: column;
         justify-content: flex-end;
     }
+    .company-list-flexbox{
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+    }
+    .company-logo{
+        width: calc(13rem + 6vw);
+        margin: 1rem 0 1rem 0;
+    }
+    .
 }
 
 @media (max-width: 1199px){
