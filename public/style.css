@@ -358,3 +358,12 @@ footer{
     padding: 1.325rem;
     background-color: #7b98ff;
 }
+
+.mobile-nav{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    z-index: 998;
+    animation: mobile-nav-appear 1s;
+}

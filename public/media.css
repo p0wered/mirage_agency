@@ -11,6 +11,15 @@
     }
 }
 
+@keyframes mobile-nav-appear {
+    0%{
+        top: -100vh;
+    }
+    100%{
+        top: 0;
+    }
+}
+
 @media (max-height: 830px) and (min-width: 1830px){
     .hs-1{
         padding-top: 4rem;

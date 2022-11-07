@@ -19,6 +19,9 @@
           </div>
         </div>
       </nav>
+    <div class="mobile-nav" v-show="showMenu">
+
+    </div>
     <router-view></router-view>
   </div>
 </template>
@@ -27,6 +30,7 @@
   export default {
     data () {
       return{
+        showMenu: false,
         opacity: 0,
       }
     },
