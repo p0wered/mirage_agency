@@ -13,7 +13,7 @@
               <li><router-link :to="{name:'news'}">NEWS</router-link></li>
               <li><router-link :to="{name:'contacts'}">CONTACTS</router-link></li>
             </ul>
-            <div class="mobile-menu d-block d-md-none">
+            <div class="mobile-menu d-md-none" @click="showM">
               <i class="bi bi-list"></i>
             </div>
           </div>
@@ -24,6 +24,17 @@
 </template>
 
 <script>
-
+  export default {
+    data () {
+      return{
+        opacity: 0,
+      }
+    },
+    methods: {
+      showM() {
+        this.showMenu = !this.showMenu
+      },
+    }
+  }
 </script>
 

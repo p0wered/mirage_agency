@@ -58,7 +58,7 @@
             <img alt="This is an image" class="recommended-img" src="../assets/Design.059e9f72.webp">
           </div>
           <div class="col-lg-5">
-            <h3 class="title-sm-left">Design Things</h3>
+            <h3 data-aos="fade-up" class="title-sm-left">Design Things</h3>
             <h1 class="title-lg-left">We Loves To Design Your Creative Ideas</h1>
             <p class="desc">A creative concept is an overarching “Big Idea” that captures audience interest, influences
               their emotional response and inspires them to take action.It is a unifying theme that can be used across
