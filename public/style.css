@@ -260,7 +260,7 @@ nav h1:active{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
-    padding: 3rem;
+    padding: 2rem;
 }
 
 .cl-row{
@@ -269,7 +269,7 @@ nav h1:active{
 }
 
 .company-logo{
-    width: calc(5rem + 6vw);
+    width: calc(4rem + 6vw);
     filter: grayscale(100%);
     transition: 300ms;
     margin: 0 1rem 0 1rem;
@@ -281,8 +281,9 @@ nav h1:active{
 }
 
 .hs-blog{
-    min-height: 30rem;
-
+    min-height: 26.333rem;
+    display: flex;
+    align-items: center;
 }
 
 .hf-blog{
@@ -331,11 +332,13 @@ nav h1:active{
     border: none;
     border-radius: 12px;
     margin: 0.625rem;
+    color: #56597a;
     background-color: rgba(201, 213, 255, 0.6);
 }
 
 .blog-btn:hover{
     transform: scale(104%);
+    color: #f1f1f1;
     background-color: #7b98ff;
 }
 
