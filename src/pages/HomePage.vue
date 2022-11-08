@@ -101,7 +101,7 @@
             the information</p>
           <div class="input-flexbox">
             <input class="blog-input col-12 col-md-8 col-lg-5" type="email" placeholder="Your Email Address Here">
-            <button class="blog-btn col-8 col-md-4 col-lg-3">Send now</button>
+            <button class="blog-btn col-8 col-md-4 col-lg-3" @click="reloadPage">Send now</button>
           </div>
         </div>
       </div>
@@ -117,6 +117,11 @@
 
 export default {
   name: "HomePage",
+  methods: {
+    reloadPage() {
+      window.location.reload()
+    }
+  }
 }
 </script>
 <style scoped>

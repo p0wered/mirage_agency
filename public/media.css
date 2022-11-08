@@ -13,9 +13,11 @@
 
 @keyframes mobile-nav-appear {
     0%{
+        display: none;
         top: -100vh;
     }
     100%{
+        display: flex;
         top: 0;
     }
 }
