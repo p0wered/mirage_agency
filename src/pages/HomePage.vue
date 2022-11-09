@@ -3,13 +3,13 @@
     <section class="home-section hs-1">
       <div class="container">
         <div class="home-flexbox hf-1">
-          <div class="col-lg-5">
+          <div data-aos="fade-left" data-aos-delay="100" class="col-lg-5">
             <h3 class="title-sm-left">Creative Agency</h3>
             <h1 class="title-lg-left">We Deliver The Best Product for You</h1>
             <p class="desc">Design is the creation of a plan or convention for the construction of an object or a system
               as in architectural blueprints, engineering drawings and business processes</p>
           </div>
-          <div class="hf-image-box">
+          <div data-aos="fade-right-up" data-aos-delay="100" class="hf-image-box">
             <img alt="This is an image" class="recommended-img" src="../assets/Recommended.56c2bffe.webp">
           </div>
         </div>
@@ -17,12 +17,12 @@
     </section>
     <section class="home-section hs-row">
       <div class="container">
-        <div class="home-flexbox-row">
-          <div class="hf2-text">
+        <div class="home-flexbox hf-row">
+          <div data-aos="fade" data-aos-duration="600" class="hf2-text">
             <h3 class="title-sm-row">Our services</h3>
             <h1 class="title-lg-row">Why People Choose Us</h1>
           </div>
-          <div class="block-row">
+          <div data-aos="fade-up" class="block-row">
             <div class="block-row-item">
               <i style="font-size: 3rem" class="bi bi-columns"></i>
               <h3 class="block-title">Design</h3>
@@ -54,11 +54,11 @@
     <section class="home-section">
       <div class="container">
         <div class="home-flexbox hf-2">
-          <div class="hf-image-box">
+          <div data-aos="fade" data-aos-delay="250" data-aos-duration="600" class="hf-image-box">
             <img alt="This is an image" class="recommended-img" src="../assets/Design.059e9f72.webp">
           </div>
-          <div class="col-lg-5">
-            <h3 data-aos="fade-up" class="title-sm-left">Design Things</h3>
+          <div data-aos="fade-right" data-aos-delay="250" data-aos-duration="600" class="col-lg-5">
+            <h3 class="title-sm-left">Design Things</h3>
             <h1 class="title-lg-left">We Loves To Design Your Creative Ideas</h1>
             <p class="desc">A creative concept is an overarching “Big Idea” that captures audience interest, influences
               their emotional response and inspires them to take action.It is a unifying theme that can be used across
@@ -66,14 +66,14 @@
           </div>
         </div>
         <div class="home-flexbox hf-3">
-          <div class="col-lg-5">
+          <div data-aos="fade-left" data-aos-delay="250" data-aos-duration="600" class="col-lg-5">
             <h3 class="title-sm-left">Our Teamwork</h3>
             <h1 class="title-lg-left">We Believe Success Lies On Teamwork</h1>
             <p class="desc">Good teamwork means a synergistic way of working with each person committed and working
               towards a shared goal. It is therefore a necessity that leaders facilitate and build the teamwork skills
               of their people if they are</p>
           </div>
-          <div class="hf-image-box">
+          <div data-aos="fade" data-aos-duration="600" class="hf-image-box">
             <img alt="This is an image" class="recommended-img" src="../assets/Teamwork.efec38b6.webp">
           </div>
         </div>
@@ -81,7 +81,7 @@
     </section>
     <section class="company-list">
       <div class="container">
-        <div class="company-list-flexbox cl-row">
+        <div data-aos="fade" data-aos-delay="250" data-aos-duration="600" class="company-list-flexbox cl-row">
           <h3 class="title-sm-row">Our Partners</h3>
           <div class="company-list-flexbox">
             <img class="company-logo" src="../assets/AirbnbLogo.svg" alt="This Is An Image">
@@ -95,13 +95,13 @@
     </section>
     <section class="home-section hs-blog">
       <div class="container">
-        <div class="home-flexbox hf-blog">
+        <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="600" class="home-flexbox hf-blog">
           <h1 class="title-lg-row">Subscribe To Our Blog</h1>
           <p class="desc-row col-12 col-lg-7">A newsletter is a tool used to communicate regularly with your subscribers, delivering
             the information</p>
           <div class="input-flexbox">
-            <input class="blog-input col-12 col-md-8 col-lg-5" type="email" placeholder="Your Email Address Here">
-            <button class="blog-btn col-8 col-md-4 col-lg-3" @click="reloadPage">Send now</button>
+            <input data-aos="fade-right" data-aos-delay="250" data-aos-duration="600" class="blog-input col-12 col-md-8 col-lg-5" type="email" placeholder="Your Email Address Here">
+            <button data-aos="fade-left" data-aos-delay="250" data-aos-duration="600" class="blog-btn col-8 col-md-4 col-lg-3" @click="reloadPage">Send now</button>
           </div>
         </div>
       </div>

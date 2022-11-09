@@ -68,6 +68,9 @@
         max-width: 30rem;
         min-width: 15rem;
     }
+    .block-row-item:hover{
+        box-shadow: none;
+    }
     .block-row{
         flex-direction: column;
         align-items: center;

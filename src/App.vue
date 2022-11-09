@@ -40,6 +40,7 @@
         showMenu: false,
         showCross: false,
         showList: true,
+
       }
     },
     methods: {

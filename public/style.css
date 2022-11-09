@@ -133,6 +133,10 @@ nav h1:active{
     text-decoration: none;
 }
 
+.mobile-routes a:hover{
+    color: #7b98ff;
+}
+
 .home-section{
     color: #56597a;
     width: 100%;
@@ -230,6 +234,14 @@ nav h1:active{
     margin: 1rem;
     display: flex;
     justify-content: center;
+}
+
+.hf-row{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow-y: hidden;
 }
 
 .block-row-item{
