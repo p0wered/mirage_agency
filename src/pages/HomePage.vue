@@ -1,6 +1,6 @@
 <template>
   <div>
-    <section class="home-section hs-1">
+    <section class="hs-1">
       <div class="container">
         <div class="home-flexbox hf-1">
           <div data-aos="fade-left" data-aos-delay="100" class="col-lg-5">
@@ -15,7 +15,7 @@
         </div>
       </div>
     </section>
-    <section class="home-section hs-row">
+    <section class="hs-row">
       <div class="container">
         <div class="home-flexbox hf-row">
           <div data-aos="fade" data-aos-duration="600" class="hf2-text">
@@ -51,7 +51,7 @@
         </div>
       </div>
     </section>
-    <section class="home-section">
+    <section>
       <div class="container">
         <div class="home-flexbox hf-2">
           <div data-aos="fade" data-aos-delay="250" data-aos-duration="600" class="hf-image-box">
@@ -93,7 +93,7 @@
         </div>
       </div>
     </section>
-    <section class="home-section hs-blog">
+    <section class="hs-blog">
       <div class="container">
         <div data-aos="fade-up" data-aos-delay="250" data-aos-duration="600" class="home-flexbox hf-blog">
           <h1 class="title-lg-row">Subscribe To Our Blog</h1>

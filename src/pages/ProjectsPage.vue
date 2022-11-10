@@ -1,10 +1,17 @@
 <template>
-  <div class="hui">
-    <Flicking :options="{ align: 'prev', circular: true }" @move-end="onMoveEnd">
-      <div class="panel">1</div>
-      <div class="panel">2</div>
-      <div class="panel">3</div>
-    </Flicking>
+  <div>
+    <section class="projects-section">
+      <div class="container">
+        <div class="projects-flexbox">
+          <div class="site-panel sp-1 col-12 col-lg-10">
+            <div class="site-panel-inner">
+              <h3 class="site-panel-h3">TINKOFF</h3>
+              <button class="site-panel-btn"></button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
