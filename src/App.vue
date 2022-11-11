@@ -20,7 +20,7 @@
           </div>
         </div>
       </nav>
-    <div class="mobile-nav" v-show="showMenu" >
+    <div :class="{'mobile-nav':true, 'close': closerMenu === true}" v-show="showMenu" >
       <ul class="mobile-routes d-flex d-md-none">
         <li><router-link :to="{name:'home'}">HOME</router-link></li>
         <li><router-link :to="{name:'projects'}">PROJECTS</router-link></li>
@@ -38,16 +38,23 @@
     data () {
       return{
         showMenu: false,
+        closerMenu: false,
         showCross: false,
         showList: true,
-
       }
     },
     methods: {
       showM() {
+        let self = this
         this.showList = !this.showList
         this.showCross = !this.showCross
         if (this.showMenu === true) {
+          this.closerMenu = true
+
+          setTimeout(function () {
+            self.closerMenu = false
+            self.showMenu = false
+          },400)
 
         }
         else {
@@ -58,3 +65,4 @@
   }
 </script>
 
+<!--TURKEY PHP GURU WAS HERE-->

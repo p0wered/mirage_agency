@@ -10,7 +10,9 @@
         margin-left: 0;
     }
 }
-
+.close {
+    animation: mobile-nav-close .4s;
+}
 @keyframes mobile-nav-appear {
     0%{
         display: none;
@@ -19,6 +21,17 @@
     100%{
         display: flex;
         left: 0;
+    }
+}
+
+@keyframes mobile-nav-close {
+    0%{
+        display: flex;
+        left: 0;
+    }
+    100%{
+        display: none;
+        left: 100vw;
     }
 }
 
@@ -78,3 +91,5 @@
         margin: 0;
     }
 }
+
+/*TURKEY PHP GURU WAS HERE*/
