@@ -25,11 +25,11 @@
       </nav>
     <div :class="{'mobile-nav':true, 'close': closerMenu === true}" v-show="showMenu" >
       <ul class="mobile-routes d-flex d-md-none">
-        <li><router-link :to="{name:'home'}">HOME</router-link></li>
-        <li><router-link :to="{name:'projects'}">PROJECTS</router-link></li>
-        <li><router-link :to="{name:'pricing'}">PRICING</router-link></li>
-        <li><router-link :to="{name:'news'}">NEWS</router-link></li>
-        <li><router-link :to="{name:'contacts'}">CONTACTS</router-link></li>
+        <li @click="showM"><router-link :to="{name:'home'}">HOME</router-link></li>
+        <li @click="showM"><router-link :to="{name:'projects'}">PROJECTS</router-link></li>
+        <li @click="showM"><router-link :to="{name:'pricing'}">PRICING</router-link></li>
+        <li @click="showM"><router-link :to="{name:'news'}">NEWS</router-link></li>
+        <li @click="showM"><router-link :to="{name:'contacts'}">CONTACTS</router-link></li>
       </ul>
     </div>
     <router-view></router-view>
