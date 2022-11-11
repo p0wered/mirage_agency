@@ -47,7 +47,12 @@
       showM() {
         this.showList = !this.showList
         this.showCross = !this.showCross
-        this.showMenu = !this.showMenu
+        if (this.showMenu === true) {
+
+        }
+        else {
+          this.showMenu = !this.showMenu
+        }
       },
     }
   }

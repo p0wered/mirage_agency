@@ -416,7 +416,7 @@ footer{
 .site-panel{
     width: 100%;
     height: 35rem;
-    background-image: url("../assets/TinkoffBackground");
+    background-image: url("assets/TinkoffBackground.png");
 }
 
 .site-panel-h3{
