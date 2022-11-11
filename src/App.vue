@@ -13,7 +13,7 @@
               <li><router-link :to="{name:'news'}">NEWS</router-link></li>
               <li><router-link :to="{name:'contacts'}">CONTACTS</router-link></li>
             </ul>
-            <div :class="{menu:true, 'menu--close4': true, 'open': animation === true}" @click="showM">
+            <div :class="{menu:true, 'menu--close4': true, 'open': animation === true, 'd-block':true, 'd-md-none':true}" @click="showM">
               <div class="menu__icon">
                 <div class="menu__line menu__line--1"></div>
                 <div class="menu__line menu__line--2"></div>
@@ -37,12 +37,21 @@
 </template>
 
 <script>
+  import { useRoute } from 'vue-router';
   export default {
     data () {
       return{
         showMenu: false,
         closerMenu: false,
         animation: false,
+        routeName: useRoute().name
+      }
+    },
+    watch:{
+      // eslint-disable-next-line no-unused-vars
+      routeName(olds, news) {
+        this.showM()
+        alert('hui')
       }
     },
     methods: {
