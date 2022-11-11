@@ -13,9 +13,12 @@
               <li><router-link :to="{name:'news'}">NEWS</router-link></li>
               <li><router-link :to="{name:'contacts'}">CONTACTS</router-link></li>
             </ul>
-            <div class="mobile-menu d-md-none" @click="showM">
-              <i class="bi bi-list" v-show="showList"></i>
-              <i class="bi bi-x-lg" v-show="showCross"></i>
+            <div :class="{menu:true, 'menu--close4': true, 'open': animation === true}" @click="showM">
+              <div class="menu__icon">
+                <div class="menu__line menu__line--1"></div>
+                <div class="menu__line menu__line--2"></div>
+                <div class="menu__line menu__line--3"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -39,17 +42,16 @@
       return{
         showMenu: false,
         closerMenu: false,
-        showCross: false,
-        showList: true,
+        animation: false,
       }
     },
     methods: {
       showM() {
         let self = this
-        this.showList = !this.showList
-        this.showCross = !this.showCross
+        this.animation = true
         if (this.showMenu === true) {
           this.closerMenu = true
+          this.animation = false
           setTimeout(function () {
             self.closerMenu = false
             self.showMenu = false
