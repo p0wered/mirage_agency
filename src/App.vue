@@ -50,12 +50,10 @@
         this.showCross = !this.showCross
         if (this.showMenu === true) {
           this.closerMenu = true
-
           setTimeout(function () {
             self.closerMenu = false
             self.showMenu = false
           },400)
-
         }
         else {
           this.showMenu = !this.showMenu
