@@ -5,6 +5,7 @@ import "bootstrap/dist/css/bootstrap.min.css"
 import "bootstrap"
 import Flicking from "@egjs/vue3-flicking/dist/flicking.esm";
 import "@egjs/vue3-flicking/dist/flicking.css";
+import "@egjs/flicking-plugins/dist/arrow.css";
 import Vuesax from 'vuesax3'
 import 'vuesax3/dist/vuesax.css'
 import AOS from 'aos';

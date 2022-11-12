@@ -110,6 +110,7 @@ nav h1:active{
     height: 100vh;
     background-color: #f1f1f1;
     z-index: 998;
+    touch-action: none;
     animation: mobile-nav-appear 500ms;
 }
 
@@ -351,7 +352,6 @@ section{
     color: #f1f1f1;
     transform: scale(105%);
     background-color: #8aa3ff;
-    box-shadow: 0 5px 15px #0000003b;
 }
 
 .block-title{
@@ -501,20 +501,13 @@ footer{
     display: flex;
     justify-content: center;
     flex-direction: column;
+    overflow: hidden;
+    padding: 1.5rem 0 1.5rem 0;
 }
 
 .pf-1{
-    padding: 3rem 0 3rem 0;
-}
-
-.projects-title{
-    text-align: center;
-    color: #56597a;
-    transition: 300ms;
-}
-
-.projects-title:hover{
-    transform: scale(105%);
+    padding: 3rem 0 1.5rem 0;
+    overflow: hidden;
 }
 
 .site-panel{
@@ -528,12 +521,11 @@ footer{
     margin: 1rem;
     background-color: rgba(201, 213, 255, 0.6);
     transition: 300ms;
-    overflow: hidden;
 }
 
 .site-panel:hover{
     transform: scale(103%);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 3px 12px #0000001A;
 }
 
 .site-panel-h1{
@@ -555,5 +547,61 @@ footer{
 .projects-btn{
     width: 100%;
     margin: 0;
+    font-weight: 600;
 }
 
+.pf-2{
+    padding: 1rem 3rem 1.5rem 3rem;
+    overflow: hidden;
+}
+
+.contact-form{
+    height: 35rem;
+    margin: 1rem;
+    padding: 3rem;
+    border-radius: 15px;
+    transition: 300ms;
+    border: 1px solid rgba(86, 89, 122, 0.4);
+}
+
+.contact-form:hover{
+    transform: scale(103%);
+    box-shadow: 0 3px 12px #0000001A;
+}
+
+.contact-form-title{
+    font-weight: 700;
+}
+
+.contact-input{
+    width: 100%;
+    padding: 1.125rem;
+    border-radius: 7px;
+    margin: 1rem 0 1rem 0;
+    font-weight: 600;
+    border: 1px solid rgba(0, 0, 0, 0);
+    transition: 300ms;
+}
+
+.contact-input:focus{
+    border: 1px solid rgba(86, 89, 122, 0.4);
+    transform: scale(103%);
+}
+
+.input-separator{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.input-email{
+    margin: 1rem 2rem 1rem 0;
+}
+
+.checkbox-f{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 1rem 0 1rem 0;
+}
