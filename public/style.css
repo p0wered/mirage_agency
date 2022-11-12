@@ -113,6 +113,94 @@ nav h1:active{
     animation: mobile-nav-appear 500ms;
 }
 
+.menu__icon {
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.menu__line {
+    position: absolute;
+    left: 0;
+    background-color: #56597a;
+    height: 3px;
+    width: 100%;
+    border-radius: 3px;
+    pointer-events: none;
+}
+.menu__line--1 {
+    top: 0;
+}
+.menu__line--2 {
+    top: 0;
+    bottom: 0;
+    margin: auto;
+}
+.menu__line--3 {
+    bottom: 0;
+}
+.menu--close4 .menu__line--1, .menu--close4 .menu__line--3 {
+    transition: all 0.2s ease-in-out;
+}
+.menu--close4 .menu__line--2 {
+    transition: transform 0.2s ease-in-out;
+}
+.menu--close4 .menu__line--2:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: #56597a;
+    border-radius: 3px;
+    transition: transform 0.2s ease-in-out;
+}
+.menu--close4.open .menu__line--1 {
+    opacity: 0;
+    transform: translate3d(-17px, 0, 0);
+    transition: all 0.2s ease-in-out;
+}
+.menu--close4.open .menu__line--2 {
+    transform: rotate(45deg);
+    transition: transform 0.2s ease-in-out;
+}
+.menu--close4.open .menu__line--2:before {
+    transform: rotate(-90deg);
+    transition: transform 0.2s ease-in-out;
+}
+.menu--close4.open .menu__line--3 {
+    opacity: 0;
+    transform: translate3d(17px, 0, 0);
+    transition: all 0.2s ease-in-out;
+}
+
+.menu--back4 .menu__line--1 {
+    transition: transform 0.3s ease-in-out;
+}
+.menu--back4 .menu__line--2 {
+    transition: transform 0.3s ease-in-out;
+}
+.menu--back4 .menu__line--3 {
+    transition: transform 0.3s ease-in-out;
+}
+.menu--back4.open .menu__line--1 {
+    transform: translate3d(-6.5px, 16px, 0) rotate(-135deg) scaleX(0.7);
+    transition: transform 0.3s ease-in-out;
+}
+.menu--back4.open .menu__line--2 {
+    transform: rotate(-180deg);
+    transition: transform 0.3s ease-in-out;
+}
+.menu--back4.open .menu__line--3 {
+    transform: translate3d(-6.5px, -16px, 0) rotate(-225deg) scaleX(0.7);
+    transition: transform 0.3s ease-in-out;
+}
+.menu {
+    position: relative;
+    padding-right: 25px;
+}
+
 .mobile-routes{
     flex-direction: column;
     list-style: none;
@@ -365,7 +453,7 @@ section{
 
 .blog-input:focus{
     transform: scale(103%);
-    box-shadow: 0 5px 15px #0000003b;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
 .blog-btn{
@@ -405,108 +493,64 @@ footer{
     padding-top: 5rem;
 }
 
-.projects-flexbox{
+.projects-flexbox-lg{
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+}
+
+.projects-flexbox-sm{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 2rem;
+}
+
+.projects-title{
+    text-align: center;
+    margin-top: 2rem;
+    color: #56597a;
+    transition: 300ms;
+}
+
+.projects-title:hover{
+    transform: scale(105%);
 }
 
 .site-panel{
     width: 100%;
-    height: 35rem;
-    background-image: url("assets/TinkoffBackground.png");
+    height: 30rem;
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: center;
+    border-radius: 15px;
+    padding: 2rem;
+    margin: 0 2rem 0 2rem;
+    border: 1px solid #e1e1e1;
+    background-color: rgba(201, 213, 255, 0.6);
+    transition: 300ms;
 }
 
-.site-panel-h3{
+.site-panel:hover{
+    transform: scale(103%);
+}
+
+.sp-1{
+
+}
+
+.sp-2 {
+
+}
+
+.site-panel-h1{
     font-weight: 700;
+    transition: 300ms;
 }
 
-.menu__icon {
-    position: absolute;
-    width: 30px;
-    height: 20px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-.menu__line {
-    position: absolute;
-    left: 0;
-    background-color: #56597a;
-    height: 3px;
-    width: 100%;
-    border-radius: 3px;
-    pointer-events: none;
-}
-.menu__line--1 {
-    top: 0;
-}
-.menu__line--2 {
-    top: 0;
-    bottom: 0;
-    margin: auto;
-}
-.menu__line--3 {
-    bottom: 0;
-}
-.menu--close4 .menu__line--1, .menu--close4 .menu__line--3 {
-    transition: all 0.2s ease-in-out;
-}
-.menu--close4 .menu__line--2 {
-    transition: transform 0.2s ease-in-out;
-}
-.menu--close4 .menu__line--2:before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 3px;
-    background-color: #56597a;
-    border-radius: 3px;
-    transition: transform 0.2s ease-in-out;
-}
-.menu--close4.open .menu__line--1 {
-    opacity: 0;
-    transform: translate3d(-17px, 0, 0);
-    transition: all 0.2s ease-in-out;
-}
-.menu--close4.open .menu__line--2 {
-    transform: rotate(45deg);
-    transition: transform 0.2s ease-in-out;
-}
-.menu--close4.open .menu__line--2:before {
-    transform: rotate(-90deg);
-    transition: transform 0.2s ease-in-out;
-}
-.menu--close4.open .menu__line--3 {
-    opacity: 0;
-    transform: translate3d(17px, 0, 0);
-    transition: all 0.2s ease-in-out;
-}
-
-
-.menu--back4 .menu__line--1 {
-    transition: transform 0.3s ease-in-out;
-}
-.menu--back4 .menu__line--2 {
-    transition: transform 0.3s ease-in-out;
-}
-.menu--back4 .menu__line--3 {
-    transition: transform 0.3s ease-in-out;
-}
-.menu--back4.open .menu__line--1 {
-    transform: translate3d(-6.5px, 16px, 0) rotate(-135deg) scaleX(0.7);
-    transition: transform 0.3s ease-in-out;
-}
-.menu--back4.open .menu__line--2 {
-    transform: rotate(-180deg);
-    transition: transform 0.3s ease-in-out;
-}
-.menu--back4.open .menu__line--3 {
-    transform: translate3d(-6.5px, -16px, 0) rotate(-225deg) scaleX(0.7);
-    transition: transform 0.3s ease-in-out;
-}
-.menu {
-    position: relative;
-    padding-right: 25px;
+.site-panel-h1:hover{
+    transform: translateX(1rem);
 }
 

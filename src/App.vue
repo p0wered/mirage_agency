@@ -37,21 +37,12 @@
 </template>
 
 <script>
-  import { useRoute } from 'vue-router';
   export default {
     data () {
       return{
         showMenu: false,
         closerMenu: false,
         animation: false,
-        routeName: useRoute().name
-      }
-    },
-    watch:{
-      // eslint-disable-next-line no-unused-vars
-      routeName(olds, news) {
-        this.showM()
-        alert('hui')
       }
     },
     methods: {
