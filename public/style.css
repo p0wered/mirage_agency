@@ -631,12 +631,21 @@ footer{
 }
 
 .arrow-icon{
-    cursor: pointer;
-    margin: 0.325rem;
     font-size: 32px;
     color: rgb(201, 213, 255);
     transition: 300ms;
 }
 .arrow-icon:hover{
-    transform: scale(110%);
+    transform: translateY(1rem);
 }
+
+.arrow-box-left{
+    cursor: pointer;
+    margin-left: 1rem;
+}
+
+.arrow-box-right{
+    cursor: pointer;
+    margin-right: 1rem;
+}
+

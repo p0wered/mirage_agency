@@ -18,14 +18,14 @@
       </div>
     </section>
     <section>
-      <div class="slider-container col-sm-12 col-md-10 col-xxl-8">
+      <div class="slider-container">
         <div class="projects-flexbox" data-aos="fade-up">
           <h1 class=title-lg-row style="text-align: center">Our Best <span style="color: #7b98ff; font-weight: 700">Projects</span></h1>
           <div class="slider-flexbox">
-            <span class="flicking-arrow-prev is-outside d-none d-lg-block">
+            <span class="arrow-box-left flicking-arrow-prev is-outside d-none d-lg-block">
             <i class="arrow-icon bi bi-caret-left-fill"></i>
             </span>
-            <Flicking style="padding: 1rem" :options="{ align: 'prev', circular: true, horizontal: true, panelsPerView: 3}" :plugins="plugins">
+            <Flicking style="padding: 1rem" :options="{ align: alignOption, circular: true, horizontal: true, panelsPerView: panelsCount}" :plugins="plugins">
               <div class="site-panel">
                 <div>
                   <h1 class="site-panel-h1">TINKOFF</h1>
@@ -81,7 +81,7 @@
                 </form>
               </div>
             </Flicking>
-            <span class="flicking-arrow-next is-outside d-none d-lg-block">
+            <span class="arrow-box-right flicking-arrow-next is-outside d-none d-lg-block">
             <i class="arrow-icon bi bi-caret-right-fill"></i>
             </span>
           </div>
@@ -109,7 +109,7 @@
             <div class="btn-f">
               <form class="projects-btn">
                 <button class="main-btn projects-btn">SUBMIT</button>
-                <p class="desc">We will contact you within the working day</p>
+                <p class="desc-row">We will contact you within the working day</p>
               </form>
             </div>
           </form>
@@ -131,6 +131,8 @@ export default {
   el: '#app',
   data() {
     return {
+      alignOption: 'prev',
+      panelsCount: 3,
       plugins: [new Arrow({ parentEl: document.body })],
       checkBox1:false,
       window: {
@@ -150,9 +152,25 @@ export default {
     handleResize() {
       this.window.width = window.innerWidth;
       this.window.height = window.innerHeight;
-      // eslint-disable-next-line no-empty
-      if (window.innerWidth < 768) {
-
+      if (window.innerWidth >= 992) {
+        this.panelsCount = 3
+        this.alignOption = 'prev'
+      }
+      if (window.innerWidth < 992) {
+        this.panelsCount = 2
+        this.alignOption = 'center'
+      }
+      if (window.innerWidth < 648) {
+        this.panelsCount = 1.7
+        this.alignOption = 'center'
+      }
+      if (window.innerWidth < 548) {
+        this.panelsCount = 1.3
+        this.alignOption = 'center'
+      }
+      if (window.innerWidth < 410) {
+        this.panelsCount = 1.1
+        this.alignOption = 'center'
       }
     }
   },
