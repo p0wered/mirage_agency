@@ -241,7 +241,7 @@ section{
 }
 
 .hf-1{
-    padding: 10rem 0 10rem 0;
+    padding: 5rem 0 5rem 0;
 }
 
 .title-sm-left{
@@ -267,6 +267,7 @@ section{
     font-size: 18px;
     transition: 300ms;
     color: #84849b;
+    font-weight: 500;
 }
 
 .desc:hover{
@@ -450,6 +451,8 @@ section{
     transition: 300ms;
     text-align: center;
     margin: 0.625rem;
+    color: #56597a;
+    font-weight: 600;
 }
 
 .blog-input:focus{
@@ -470,6 +473,7 @@ section{
 
 .blog-btn{
     margin: 0.625rem;
+    font-weight: 600;
 }
 
 .main-btn:hover{
@@ -506,8 +510,14 @@ footer{
 }
 
 .pf-1{
-    padding: 3rem 0 1.5rem 0;
-    overflow: hidden;
+    padding: 1.5rem 0 1.5rem 0;
+}
+
+.projects-image-box{
+    height: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .site-panel{
@@ -521,6 +531,9 @@ footer{
     margin: 1rem;
     background-color: rgba(201, 213, 255, 0.6);
     transition: 300ms;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
 }
 
 .site-panel:hover{
@@ -556,7 +569,6 @@ footer{
 }
 
 .contact-form{
-    height: 35rem;
     margin: 1rem;
     padding: 3rem;
     border-radius: 15px;
@@ -581,6 +593,7 @@ footer{
     font-weight: 600;
     border: 1px solid rgba(0, 0, 0, 0);
     transition: 300ms;
+    color: #56597a;
 }
 
 .contact-input:focus{
@@ -603,5 +616,27 @@ footer{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 1rem 0 1rem 0;
+    margin: 1rem 0 2rem 0;
+}
+
+.slider-container{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider-flexbox{
+    display: flex;
+    justify-content: unset;
+    align-items: center;
+}
+
+.arrow-icon{
+    cursor: pointer;
+    margin: 0.325rem;
+    font-size: 32px;
+    color: rgb(201, 213, 255);
+    transition: 300ms;
+}
+.arrow-icon:hover{
+    transform: scale(110%);
 }
