@@ -417,6 +417,7 @@ section{
     display: flex;
     align-items: center;
     background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='450' preserveAspectRatio='none' viewBox='0 0 1920 450'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1043%26quot%3b)' fill='none'%3e%3crect width='1920' height='450' x='0' y='0' fill='rgba(241%2c 241%2c 241%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c115 C 128%2c100.2 384%2c22.4 640%2c41 C 896%2c59.6 1024%2c200.2 1280%2c208 C 1536%2c215.8 1792%2c105.6 1920%2c80L1920 450L0 450z' fill='rgba(212%2c 221%2c 255%2c 0.6)'%3e%3c/path%3e%3cpath d='M 0%2c397 C 128%2c367.6 384%2c251.6 640%2c250 C 896%2c248.4 1024%2c385 1280%2c389 C 1536%2c393 1792%2c293.8 1920%2c270L1920 450L0 450z' fill='rgba(123%2c 152%2c 255%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1043'%3e%3crect width='1920' height='450' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-size: cover;
 }
 
 .hf-blog{
@@ -557,6 +558,10 @@ footer{
     align-items: end;
 }
 
+.projects-btn-f{
+    width: 45%;
+}
+
 .projects-btn{
     width: 100%;
     margin: 0;
@@ -574,15 +579,16 @@ footer{
     border-radius: 15px;
     transition: 300ms;
     border: 1px solid rgba(86, 89, 122, 0.4);
-}
-
-.contact-form:hover{
-    transform: scale(103%);
-    box-shadow: 0 3px 12px #0000001A;
+    background-color: #f1f1f1;
 }
 
 .contact-form-title{
     font-weight: 700;
+    transition: 300ms;
+}
+
+.contact-form-title:hover{
+    transform: translateX(1rem);
 }
 
 .contact-input{
@@ -649,3 +655,40 @@ footer{
     margin-right: 1rem;
 }
 
+.btn-f{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.projects-desc{
+    margin: 0;
+    font-size: 15px;
+    transition: 300ms;
+    color: #84849b;
+    font-weight: 500;
+    width: 50%;
+}
+
+.projects-desc:hover{
+    transform: scale(103%);
+}
+
+.pricing-section{
+    padding-top: 5rem;
+}
+
+.pricing-flexbox{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 91.6vh;
+}
+
+.pricing-item{
+    width: 45%;
+    height: 40rem;
+    margin: 1rem;
+    border-radius: 15px;
+    background-color: rgba(201, 213, 255, 0.6);
+}

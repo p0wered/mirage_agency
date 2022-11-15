@@ -101,27 +101,21 @@
             the information</p>
           <div class="input-flexbox">
             <input class="blog-input col-12 col-md-8 col-lg-5" type="email" placeholder="Your Email Address Here">
-            <button class="main-btn blog-btn col-8 col-md-4 col-lg-3" @click="reloadPage">Send now</button>
+            <button class="main-btn blog-btn col-8 col-md-4 col-lg-3" @click="$vs.notify({title:'Thank You!',text:'You are now subscribed to our blog',color:'#6680e1',position:'bottom-right'})">Send now</button>
           </div>
         </div>
       </div>
     </section>
+    <footer>
+      <i class="bi bi-c-circle"></i>
+      <p style="margin: 0 0 0 1rem">All Rights Served By MIRAGE {{new Date().getFullYear()}}</p>
+    </footer>
   </div>
-  <footer>
-    <i class="bi bi-c-circle"></i>
-    <p style="margin: 0 0 0 1rem">All Rights Served By MIRAGE {{new Date().getFullYear()}}</p>
-  </footer>
 </template>
 
 <script>
-
 export default {
   name: "HomePage",
-  methods: {
-    reloadPage() {
-      window.location.reload()
-    }
-  }
 }
 </script>
 <style scoped>

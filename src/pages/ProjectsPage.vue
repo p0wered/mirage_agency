@@ -1,8 +1,6 @@
 <template>
   <div>
     <section class="projects-section">
-      {{window.width}}
-      {{window.height}}
       <div class="container">
         <div class="home-flexbox pf-1 hf-2">
           <div data-aos="fade" data-aos-delay="250" data-aos-duration="600" class="projects-image-box">
@@ -37,46 +35,46 @@
               </div>
               <div class="site-panel">
                 <div>
-                  <h1 class="site-panel-h1">TINKOFF</h1>
-                  <p class="desc">Best Virtual Bank in Russia</p>
+                  <h1 class="site-panel-h1">WESTERN RISE</h1>
+                  <p class="desc">Men's Clothing Shop</p>
                 </div>
-                <form class="projects-btn" action="https://www.tinkoff.ru/" target="_blank">
+                <form class="projects-btn" action="https://www.westernrise.com/" target="_blank">
                   <button class="main-btn projects-btn">VISIT SITE</button>
                 </form>
               </div>
               <div class="site-panel">
                 <div>
-                  <h1 class="site-panel-h1">TINKOFF</h1>
-                  <p class="desc">Best Virtual Bank in Russia</p>
+                  <h1 class="site-panel-h1">SPOTIFY</h1>
+                  <p class="desc">Digital Music Service</p>
                 </div>
-                <form class="projects-btn" action="https://www.tinkoff.ru/" target="_blank">
+                <form class="projects-btn" action="https://open.spotify.com/" target="_blank">
                   <button class="main-btn projects-btn">VISIT SITE</button>
                 </form>
               </div>
               <div class="site-panel">
                 <div>
-                  <h1 class="site-panel-h1">TINKOFF</h1>
-                  <p class="desc">Best Virtual Bank in Russia</p>
+                  <h1 class="site-panel-h1">AIRBNB</h1>
+                  <p class="desc">Homestays Online Marketplace</p>
                 </div>
-                <form class="projects-btn" action="https://www.tinkoff.ru/" target="_blank">
+                <form class="projects-btn" action="https://www.airbnb.ru/" target="_blank">
                   <button class="main-btn projects-btn">VISIT SITE</button>
                 </form>
               </div>
               <div class="site-panel">
                 <div>
-                  <h1 class="site-panel-h1">TINKOFF</h1>
-                  <p class="desc">Best Virtual Bank in Russia</p>
+                  <h1 class="site-panel-h1">ALTCRAFT</h1>
+                  <p class="desc">Marketing Automation Tool</p>
                 </div>
-                <form class="projects-btn" action="https://www.tinkoff.ru/" target="_blank">
+                <form class="projects-btn" action="https://altcraft.com/" target="_blank">
                   <button class="main-btn projects-btn">VISIT SITE</button>
                 </form>
               </div>
               <div class="site-panel">
                 <div>
-                  <h1 class="site-panel-h1">TINKOFF</h1>
-                  <p class="desc">Best Virtual Bank in Russia</p>
+                  <h1 class="site-panel-h1">SIMPLY CHOCOLATE</h1>
+                  <p class="desc">Danish Chocolate Fabric</p>
                 </div>
-                <form class="projects-btn" action="https://www.tinkoff.ru/" target="_blank">
+                <form class="projects-btn" action="https://simplychocolatecph.com/" target="_blank">
                   <button class="main-btn projects-btn">VISIT SITE</button>
                 </form>
               </div>
@@ -88,14 +86,14 @@
         </div>
       </div>
     </section>
-    <section>
+    <section class="test">
       <div class="container">
         <div class="home-flexbox hf-row pf-2">
-          <div style="text-align: center">
+          <div data-aos="fade-up" data-aos-delay="150" data-aos-duration="600" style="text-align: center">
             <h3 class="title-lg-row">Want to become a partner?</h3>
             <h1 class="desc-row">Leave a request and we will contact you shortly</h1>
           </div>
-          <form class="contact-form col-sm-12 col-md-11 col-xxl-9">
+          <form class="contact-form col-sm-12 col-md-11 col-xxl-8" data-aos="fade-up" data-aos-delay="250" data-aos-duration="600">
             <h4 class="contact-form-title">Tell Us About Yourself</h4>
             <input class="contact-input" type="text" placeholder="Full Name">
             <input class="contact-input" type="text" placeholder="Company">
@@ -107,15 +105,19 @@
               <vs-checkbox v-model="checkBox1">I agree to the <span style="color: #7b98ff">processing of personal data</span></vs-checkbox>
             </div>
             <div class="btn-f">
-              <form class="projects-btn">
+              <form class="projects-btn-f">
                 <button class="main-btn projects-btn">SUBMIT</button>
-                <p class="desc-row">We will contact you within the working day</p>
               </form>
+              <p class="projects-desc">We will contact you within the working day</p>
             </div>
           </form>
         </div>
       </div>
     </section>
+    <footer>
+      <i class="bi bi-c-circle"></i>
+      <p style="margin: 0 0 0 1rem">All Rights Served By MIRAGE {{new Date().getFullYear()}}</p>
+    </footer>
   </div>
 </template>
 
@@ -131,6 +133,7 @@ export default {
   el: '#app',
   data() {
     return {
+      checkBox: false,
       alignOption: 'prev',
       panelsCount: 3,
       plugins: [new Arrow({ parentEl: document.body })],

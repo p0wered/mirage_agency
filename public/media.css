@@ -88,7 +88,7 @@
     }
     .contact-form{
         padding: 2rem;
-        margin: 1rem 0 1rem 0;
+        margin: 1rem 0 0 0;
     }
     .contact-form:hover{
         transform: none;
@@ -98,6 +98,17 @@
     }
     .input-email{
         margin: 1rem 0 1rem 0;
+    }
+    .btn-f{
+        flex-direction: column;
+    }
+    .projects-btn-f{
+        width: 100%;
+    }
+    .projects-desc{
+        width: 100%;
+        text-align: center;
+        margin: 2rem 0 0 0;
     }
 }
 
@@ -129,11 +140,19 @@
     }
 }
 
-@media (max-width: 1500px){
+@media (max-width: 2560px){
     .slider-container{
-        max-width: 91.3333%;
+        max-width:65.3333%;
     }
+}
 
+@media (min-width: 3840px){
+    .slider-container{
+        max-width:38.3333%;
+    }
+    .hs-blog{
+        background-image: none;
+    }
 }
 
 @media (max-width: 1200px){
@@ -148,6 +167,12 @@
     }
     .site-panel:hover{
         box-shadow: none;
+    }
+}
+
+@media (max-height: 600px){
+    .site-panel{
+        height: 20rem;
     }
 }
 
