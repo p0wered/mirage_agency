@@ -670,86 +670,13 @@ footer{
     padding-top: 5rem;
 }
 
-.pricing-flexbox-lg{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    padding: 3rem 0;
-}
-
-.pricing-item{
-    width: 46%;
+.pricing-panel{
+    background-color: rgba(201, 213, 255, 0.6);
+    padding: 2rem;
     margin: 1rem;
     border-radius: 1.5rem;
-    background-color: rgba(201, 213, 255, 0.6);
-    transition: 300ms;
-    border: 6px solid #c6d0ef;
-    overflow: hidden;
 }
 
-.pricing-item:hover{
-    transform: scale(103%);
-    box-shadow: 0 3px 12px #0000001A;
-}
-
-.title-box{
-    width: 100%;
-    padding: 2rem;
-    text-align: center;
-    background-color: #acb9e16b;
-}
-
-.bi-check-circle-fill{
-    height: auto;
-    width: auto;
-    font-size: 24px;
-    margin-right: 0.625rem;
-    color: #7b98ff;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.325rem;
-}
-
-.pricing-item ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-
-.title-desc-box{
-    padding: 2rem;
-}
-
-.title-desc-box li{
-    display: flex;
-    flex-direction: row;
-    margin: 0.625rem 0;
-    align-items: flex-start;
-}
-
-
-
-.pricing-flexbox-sm{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: flex-start;
-    flex-direction: row;
-    margin: 1rem;
-}
-
-.features-list p{
-    margin: 0;
-    font-size: 20px;
-    padding: 0.125rem;
-}
-
-.num-text{
-    font-weight: 700;
-    font-size: 22px;
-}
-
-.desc-sm{
-    font-size: 12px;
+.tb-text{
     margin: 0;
 }

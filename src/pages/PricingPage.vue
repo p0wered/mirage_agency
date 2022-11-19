@@ -2,51 +2,15 @@
   <div>
     <section class="pricing-section">
       <div class="container">
-        <div class="pricing-flexbox-lg">
-          <div data-aos="fade" data-aos-duration="600">
-            <h1 class="title-lg-row">Choose your <span style="color: #7b98ff; font-weight: 700">rate</span></h1>
-          </div>
-          <div class="pricing-flexbox-sm" data-aos="fade-up" data-aos-duration="600">
-            <div class="pricing-item">
-              <div class="title-box">
-                <h1 class="title-lg-row" style="margin: 0">STANDARD</h1>
-              </div>
-              <div class="title-desc-box">
-                <ul class="features-list">
-                  <li><i class="bi bi-check-circle-fill"></i><p>Quick start within one day</p></li>
-                  <li><i class="bi bi-check-circle-fill"></i><p>No equipment and support costs</p></li>
-                  <li><i class="bi bi-check-circle-fill"></i><p>Personal data privacy</p></li>
-                  <li><i class="bi bi-check-circle-fill"></i><p>The price depends on the number of customer profiles</p></li>
-                </ul>
-                <p class="num-text">Number of customer profiles</p>
-                <vs-slider :min="5" @change="cambio" color="#7b98ff" step=25 text-fixed=K v-model="value1"/>
-                <div style="text-align: center;">
-                  <h3 style="margin: 1.325rem 0;">{{value2}}$/month</h3>
-                </div>
-                <p class="desc-sm">All payments in Dollars are subject to a 15% commission for acquiring services.
-                  Unfortunately, this is out of our control and there is nothing we can do about it. But you can always
-                  use Rubles or Yuan to pay without commission
-                </p>
-              </div>
+        <div class="home-flexbox">
+          <div class="pricing-panel col-lg-4">
+            <div class="title-box">
+              <h1 class="tb-text">STANDARD</h1>
             </div>
-            <div class="pricing-item">
-              <div class="title-box">
-                <h1 class="title-lg-row" style="margin: 0">PREMIUM</h1>
-              </div>
-              <div class="title-desc-box">
-                <ul class="features-list">
-                  <li><i class="bi bi-check-circle-fill"></i><p>Full compliance with your information security requirements</p></li>
-                  <li><i class="bi bi-check-circle-fill"></i><p>Fixed payment for the entire usage period</p></li>
-                  <li><i class="bi bi-check-circle-fill"></i><p>Functional improvements according to you</p></li>
-                  <li><i class="bi bi-check-circle-fill"></i><p>Strategic safety and independence of your business</p></li>
-                  <li><i class="bi bi-check-circle-fill"></i><p>Customer Profile 360°</p></li>
-                </ul>
-                <p class="num-text">Number of customer profiles</p>
-                <vs-slider disabled="true" @change="cambio" color="#7b98ff" v-model="value3"/>
-                <div style="text-align: center;">
-                  <h3 style="margin: 1.325rem 0 0 0;">Request for price</h3>
-                </div>
-              </div>
+          </div>
+          <div class="pricing-panel col-lg-4">
+            <div class="title-box">
+              <h1 class="tb-text">PREMIUM</h1>
             </div>
           </div>
         </div>
@@ -55,7 +19,7 @@
     <section>
       <div class="container">
         <div class="home-flexbox">
-          sd
+
         </div>
       </div>
     </section>
@@ -87,3 +51,44 @@ export default {
 <style scoped>
 
 </style>
+
+<!--<div class="title-box">-->
+<!--<h1 class="title-lg-row" style="margin: 0">STANDARD</h1>-->
+<!--</div>-->
+<!--<div class="title-desc-box">-->
+<!--<ul class="features-list">-->
+<!--  <li><i class="bi bi-check-circle-fill"></i><p>Quick start within one day</p></li>-->
+<!--  <li><i class="bi bi-check-circle-fill"></i><p>No equipment and support costs</p></li>-->
+<!--  <li><i class="bi bi-check-circle-fill"></i><p>Personal data privacy</p></li>-->
+<!--  <li><i class="bi bi-check-circle-fill"></i><p>The price depends on the number of customer profiles</p></li>-->
+<!--</ul>-->
+<!--<p class="num-text">Number of customer profiles</p>-->
+<!--<vs-slider :min="5" @change="cambio" color="#7b98ff" step=25 text-fixed=K v-model="value1"/>-->
+<!--<div style="text-align: center;">-->
+<!--  <h3 style="margin: 1.325rem 0;">{{value2}}$/month</h3>-->
+<!--</div>-->
+<!--<p class="desc-sm">All payments in Dollars are subject to a 15% commission for acquiring services.-->
+<!--  Unfortunately, this is out of our control and there is nothing we can do about it. But you can always-->
+<!--  use Rubles or Yuan to pay without commission-->
+<!--</p>-->
+<!--</div>-->
+
+<!--            <div class="pricing-item">-->
+<!--              <div class="title-box">-->
+<!--                <h1 class="title-lg-row" style="margin: 0">PREMIUM</h1>-->
+<!--              </div>-->
+<!--              <div class="title-desc-box">-->
+<!--                <ul class="features-list">-->
+<!--                  <li><i class="bi bi-check-circle-fill"></i><p>Full compliance with your information security requirements</p></li>-->
+<!--                  <li><i class="bi bi-check-circle-fill"></i><p>Fixed payment for the entire usage period</p></li>-->
+<!--                  <li><i class="bi bi-check-circle-fill"></i><p>Functional improvements according to you</p></li>-->
+<!--                  <li><i class="bi bi-check-circle-fill"></i><p>Strategic safety and independence of your business</p></li>-->
+<!--                  <li><i class="bi bi-check-circle-fill"></i><p>Customer Profile 360°</p></li>-->
+<!--                </ul>-->
+<!--                <p class="num-text">Number of customer profiles</p>-->
+<!--                <vs-slider disabled="true" @change="cambio" color="#7b98ff" v-model="value3"/>-->
+<!--                <div style="text-align: center;">-->
+<!--                  <h3 style="margin: 1.325rem 0 0 0;">Request for price</h3>-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </div>-->
