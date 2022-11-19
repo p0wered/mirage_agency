@@ -27,7 +27,7 @@
               <div class="site-panel">
                 <div>
                   <h1 class="site-panel-h1">TINKOFF</h1>
-                  <p class="desc">Best Virtual Bank in Russia</p>
+                  <p class="projects-desc">Best Virtual Bank in Russia</p>
                 </div>
                 <form class="projects-btn" action="https://www.tinkoff.ru/" target="_blank">
                   <button class="main-btn projects-btn">VISIT SITE</button>
@@ -36,7 +36,7 @@
               <div class="site-panel">
                 <div>
                   <h1 class="site-panel-h1">WESTERN RISE</h1>
-                  <p class="desc">Men's Clothing Shop</p>
+                  <p class="projects-desc">Men's Clothing Shop</p>
                 </div>
                 <form class="projects-btn" action="https://www.westernrise.com/" target="_blank">
                   <button class="main-btn projects-btn">VISIT SITE</button>
@@ -45,7 +45,7 @@
               <div class="site-panel">
                 <div>
                   <h1 class="site-panel-h1">SPOTIFY</h1>
-                  <p class="desc">Digital Music Service</p>
+                  <p class="projects-desc">Digital Music Service</p>
                 </div>
                 <form class="projects-btn" action="https://open.spotify.com/" target="_blank">
                   <button class="main-btn projects-btn">VISIT SITE</button>
@@ -54,7 +54,7 @@
               <div class="site-panel">
                 <div>
                   <h1 class="site-panel-h1">AIRBNB</h1>
-                  <p class="desc">Homestays Online Marketplace</p>
+                  <p class="projects-desc">Homestays Online Marketplace</p>
                 </div>
                 <form class="projects-btn" action="https://www.airbnb.ru/" target="_blank">
                   <button class="main-btn projects-btn">VISIT SITE</button>
@@ -63,7 +63,7 @@
               <div class="site-panel">
                 <div>
                   <h1 class="site-panel-h1">ALTCRAFT</h1>
-                  <p class="desc">Marketing Automation Tool</p>
+                  <p class="projects-desc">Marketing Automation Tool</p>
                 </div>
                 <form class="projects-btn" action="https://altcraft.com/" target="_blank">
                   <button class="main-btn projects-btn">VISIT SITE</button>
@@ -72,7 +72,7 @@
               <div class="site-panel">
                 <div>
                   <h1 class="site-panel-h1">SIMPLY CHOCOLATE</h1>
-                  <p class="desc">Danish Chocolate Fabric</p>
+                  <p class="projects-desc">Danish Chocolate Fabric</p>
                 </div>
                 <form class="projects-btn" action="https://simplychocolatecph.com/" target="_blank">
                   <button class="main-btn projects-btn">VISIT SITE</button>
