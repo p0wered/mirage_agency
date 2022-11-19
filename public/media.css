@@ -168,6 +168,13 @@
     .site-panel:hover{
         box-shadow: none;
     }
+    .pricing-flexbox-sm{
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing-item{
+        width: 100%;
+    }
 }
 
 @media (max-height: 600px){

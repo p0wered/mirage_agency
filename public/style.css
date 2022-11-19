@@ -679,7 +679,6 @@ footer{
 
 .pricing-item{
     width: 46%;
-    height: 40rem;
     margin: 1rem;
     border-radius: 1.5rem;
     background-color: rgba(201, 213, 255, 0.6);
@@ -689,7 +688,7 @@ footer{
 }
 
 .pricing-item:hover{
-    transform: scale(102%);
+    transform: scale(103%);
     box-shadow: 0 3px 12px #0000001A;
 }
 
@@ -729,16 +728,28 @@ footer{
     align-items: flex-start;
 }
 
-.title-desc-box p{
+
+
+.pricing-flexbox-sm{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    flex-direction: row;
+    margin: 1rem;
+}
+
+.features-list p{
     margin: 0;
     font-size: 20px;
     padding: 0.125rem;
 }
 
-.pricing-flexbox-sm{
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    flex-direction: row;
-    margin: 1rem;
+.num-text{
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.desc-sm{
+    font-size: 12px;
+    margin: 0;
 }
