@@ -114,6 +114,13 @@
         text-align: center;
         margin: 2rem 0 0 0;
     }
+    .pricing-panel:hover{
+        box-shadow: none;
+        transform: none;
+    }
+    .hf-pricing{
+        margin-bottom: 0;
+    }
 }
 
 @media (max-width: 1199px){
@@ -133,6 +140,15 @@
     .hf-pricing{
         flex-direction: column;
         align-items: center;
+    }
+    .pricing-img{
+        margin: 0;
+    }
+    .pricing-flexbox{
+        flex-direction: column-reverse;
+    }
+    .pricing-panel{
+        margin: 1rem;
     }
 }
 
@@ -175,13 +191,6 @@
     }
     .site-panel:hover{
         box-shadow: none;
-    }
-    .pricing-flexbox-sm{
-        flex-direction: column;
-        align-items: center;
-    }
-    .pricing-item{
-        width: 100%;
     }
 }
 

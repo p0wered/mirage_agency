@@ -6,7 +6,7 @@
           <h1 class="title-lg-row">Choose your <span class="colorized">rate</span></h1>
         </div>
         <div class="home-flexbox hf-pricing">
-          <div class="pricing-panel col-12 col-lg-5">
+          <div class="pricing-panel col-12 col-lg-8 col-xl-5">
             <div class="title-box">
               <h1 class="tb-text">STANDARD</h1>
             </div>
@@ -24,9 +24,13 @@
               <div style="text-align: center;">
                 <h3 class="num-price">{{value2}}$/month</h3>
               </div>
+              <p class="desc-sm">All payments in Dollars are subject to a 15% commission for acquiring services.
+                Unfortunately, this is out of our control and there is nothing we can do about it. But you can always
+                use Rubles or Yuan to pay without commission.
+              </p>
             </div>
           </div>
-          <div class="pricing-panel col-12 col-lg-5">
+          <div class="pricing-panel col-12 col-lg-8 col-xl-5">
             <div class="title-box">
               <h1 class="tb-text">PREMIUM</h1>
             </div>
@@ -53,7 +57,31 @@
     <section>
       <div class="container">
         <div class="home-flexbox">
-
+          <div>
+            <form class="pricing-form contact-form">
+              <div class="pricing-flexbox">
+                <div>
+                  <h4 class="contact-form-title">Get more information</h4>
+                  <input class="contact-input" type="text" placeholder="Full Name">
+                  <input class="contact-input" type="text" placeholder="Job Title">
+                  <input class="contact-input" type="email" placeholder="Business Email">
+                  <input class="contact-input" type="tel" placeholder="Phone">
+                  <div class="checkbox-f">
+                    <vs-checkbox v-model="checkBox1">I agree to the <span style="color: #7b98ff">processing of personal data</span></vs-checkbox>
+                  </div>
+                  <div class="btn-f">
+                    <form class="projects-btn-f">
+                      <button class="main-btn projects-btn">SUBMIT</button>
+                    </form>
+                    <p class="contact-desc">We will contact you within the working day</p>
+                  </div>
+                </div>
+                <div class="pricing-img-box">
+                  <img alt="This is an image" class="pricing-img" src="../assets/Pricing.290jdc1k.webp">
+                </div>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>
