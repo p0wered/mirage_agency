@@ -18,7 +18,7 @@
     <section>
       <div class="slider-container">
         <div class="projects-flexbox" data-aos="fade-up">
-          <h1 class=title-lg-row style="text-align: center">Our Best <span style="color: #7b98ff; font-weight: 700">Projects</span></h1>
+          <h1 class=title-lg-row style="text-align: center">Our Best <span class="colorized">Projects</span></h1>
           <div class="slider-flexbox">
             <span class="arrow-box-left flicking-arrow-prev is-outside d-none d-lg-block">
             <i class="arrow-icon bi bi-caret-left-fill"></i>
@@ -93,24 +93,26 @@
             <h3 class="title-lg-row">Want to become a partner?</h3>
             <h1 class="desc-row">Leave a request and we will contact you shortly</h1>
           </div>
-          <form class="contact-form col-sm-12 col-md-11 col-xxl-8" data-aos="fade-up" data-aos-delay="250" data-aos-duration="600">
-            <h4 class="contact-form-title">Tell Us About Yourself</h4>
-            <input class="contact-input" type="text" placeholder="Full Name">
-            <input class="contact-input" type="text" placeholder="Company">
-            <div class="input-separator">
-              <input class="contact-input input-email" type="email" placeholder="Email">
-              <input class="contact-input input-number" type="tel" placeholder="Phone">
-            </div>
-            <div class="checkbox-f">
-              <vs-checkbox v-model="checkBox1">I agree to the <span style="color: #7b98ff">processing of personal data</span></vs-checkbox>
-            </div>
-            <div class="btn-f">
-              <form class="projects-btn-f">
-                <button class="main-btn projects-btn">SUBMIT</button>
-              </form>
-              <p class="projects-desc">We will contact you within the working day</p>
-            </div>
-          </form>
+          <div class="col-sm-12 col-md-11 col-xxl-8" data-aos="fade-up" data-aos-delay="250" data-aos-duration="600">
+            <form class="contact-form">
+              <h4 class="contact-form-title">Tell Us About Yourself</h4>
+              <input class="contact-input" type="text" placeholder="Full Name">
+              <input class="contact-input" type="text" placeholder="Company">
+              <div class="input-separator">
+                <input class="contact-input input-email" type="email" placeholder="Email">
+                <input class="contact-input input-number" type="tel" placeholder="Phone">
+              </div>
+              <div class="checkbox-f">
+                <vs-checkbox v-model="checkBox1">I agree to the <span style="color: #7b98ff">processing of personal data</span></vs-checkbox>
+              </div>
+              <div class="btn-f">
+                <form class="projects-btn-f">
+                  <button class="main-btn projects-btn">SUBMIT</button>
+                </form>
+                <p class="contact-desc">We will contact you within the working day</p>
+              </div>
+            </form>
+          </div>
         </div>
       </div>
     </section>

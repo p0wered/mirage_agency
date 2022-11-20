@@ -2,15 +2,49 @@
   <div>
     <section class="pricing-section">
       <div class="container">
-        <div class="home-flexbox">
-          <div class="pricing-panel col-lg-4">
+        <div class="pricing-text">
+          <h1 class="title-lg-row">Choose your <span class="colorized">rate</span></h1>
+        </div>
+        <div class="home-flexbox hf-pricing">
+          <div class="pricing-panel col-12 col-lg-5">
             <div class="title-box">
               <h1 class="tb-text">STANDARD</h1>
             </div>
+            <div class="pricing-panel-inner">
+              <div class="desc-box">
+                <ul class="features-list">
+                  <li><i class="bi bi-check-circle-fill"></i><p>Quick start within one day</p></li>
+                  <li><i class="bi bi-check-circle-fill"></i><p>No equipment and support costs</p></li>
+                  <li><i class="bi bi-check-circle-fill"></i><p>Personal data privacy</p></li>
+                  <li><i class="bi bi-check-circle-fill"></i><p>The price depends on the number of customer profiles</p></li>
+                </ul>
+              </div>
+              <p class="num-text">Number of customer profiles</p>
+              <vs-slider :min="5" @change="cambio" color="#7b98ff" step=25 text-fixed=K v-model="value1"/>
+              <div style="text-align: center;">
+                <h3 class="num-price">{{value2}}$/month</h3>
+              </div>
+            </div>
           </div>
-          <div class="pricing-panel col-lg-4">
+          <div class="pricing-panel col-12 col-lg-5">
             <div class="title-box">
               <h1 class="tb-text">PREMIUM</h1>
+            </div>
+            <div class="pricing-panel-inner">
+              <div class="desc-box">
+                <ul class="features-list">
+                  <li><i class="bi bi-check-circle-fill"></i><p>Full compliance with your information security requirements</p></li>
+                  <li><i class="bi bi-check-circle-fill"></i><p>Fixed payment for the entire usage period</p></li>
+                  <li><i class="bi bi-check-circle-fill"></i><p>Functional improvements according to you</p></li>
+                  <li><i class="bi bi-check-circle-fill"></i><p>Strategic safety and independence of your business</p></li>
+                  <li><i class="bi bi-check-circle-fill"></i><p>Customer Profile 360°</p></li>
+                </ul>
+              </div>
+              <p class="num-text">Number of customer profiles <span class="colorized">unlimited</span></p>
+              <vs-slider disabled="true" color="#7b98ff" v-model="value3"/>
+              <div style="text-align: center;">
+                <h3>Price on request</h3>
+              </div>
             </div>
           </div>
         </div>
@@ -79,11 +113,7 @@ export default {
 <!--              </div>-->
 <!--              <div class="title-desc-box">-->
 <!--                <ul class="features-list">-->
-<!--                  <li><i class="bi bi-check-circle-fill"></i><p>Full compliance with your information security requirements</p></li>-->
-<!--                  <li><i class="bi bi-check-circle-fill"></i><p>Fixed payment for the entire usage period</p></li>-->
-<!--                  <li><i class="bi bi-check-circle-fill"></i><p>Functional improvements according to you</p></li>-->
-<!--                  <li><i class="bi bi-check-circle-fill"></i><p>Strategic safety and independence of your business</p></li>-->
-<!--                  <li><i class="bi bi-check-circle-fill"></i><p>Customer Profile 360°</p></li>-->
+
 <!--                </ul>-->
 <!--                <p class="num-text">Number of customer profiles</p>-->
 <!--                <vs-slider disabled="true" @change="cambio" color="#7b98ff" v-model="value3"/>-->

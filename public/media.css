@@ -88,10 +88,11 @@
     }
     .contact-form{
         padding: 2rem;
-        margin: 1rem 0 0 0;
+        margin: 1rem 0 1rem 0;
     }
     .contact-form:hover{
         transform: none;
+        box-shadow: none;
     }
     .input-separator{
         flex-direction: column;
@@ -106,6 +107,9 @@
         width: 100%;
     }
     .projects-desc{
+        width: 100%;
+    }
+    .contact-desc{
         width: 100%;
         text-align: center;
         margin: 2rem 0 0 0;
@@ -125,6 +129,10 @@
         align-items: center;
         padding-bottom: 2rem;
         margin: 0;
+    }
+    .hf-pricing{
+        flex-direction: column;
+        align-items: center;
     }
 }
 

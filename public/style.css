@@ -578,13 +578,14 @@ footer{
     transition: 300ms;
 }
 
+.contact-form:hover{
+    transform: scale(103%);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
 .contact-form-title{
     font-weight: 700;
     transition: 300ms;
-}
-
-.contact-form-title:hover{
-    transform: translateX(1rem);
 }
 
 .contact-input{
@@ -619,6 +620,15 @@ footer{
     align-items: center;
     justify-content: flex-start;
     margin: 1rem 0 2rem 0;
+}
+
+.contact-desc{
+    margin: 0;
+    font-size: 14px;
+    transition: 300ms;
+    color: #84849b;
+    font-weight: 500;
+    width: 50%;
 }
 
 .slider-container{
@@ -670,13 +680,66 @@ footer{
     padding-top: 5rem;
 }
 
+.pricing-text{
+    text-align: center;
+    margin: 2rem 0 1.5rem 0;
+}
+
 .pricing-panel{
     background-color: rgba(201, 213, 255, 0.6);
-    padding: 2rem;
-    margin: 1rem;
+    margin: 1rem 1rem 0 1rem;
     border-radius: 1.5rem;
+    overflow: hidden;
+    border: 6px solid #9fb3ff45;
+}
+
+.title-box{
+    text-align: center;
+    padding: 2rem;
+    background-color: #9fb3ff45;
 }
 
 .tb-text{
     margin: 0;
 }
+
+.features-list{
+    margin: 0;
+    list-style: none;
+    padding: 0;
+}
+
+.features-list li{
+    display: flex;
+    font-size: 18px;
+}
+
+.bi-check-circle-fill{
+    font-size: 1.225rem;
+    margin-right: 0.825rem;
+    color: #7b98ff;
+}
+
+.pricing-panel-inner{
+    padding: 2rem;
+    min-height: 29.325rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.num-text{
+    font-weight: 700;
+    font-size: 1.325rem;
+}
+
+.colorized{
+    font-weight: 700;
+    color: #7b98ff;
+}
+
+.hf-pricing{
+    align-items: flex-start;
+}
+
+
