@@ -145,10 +145,16 @@
         align-items: center;
     }
     .pricing-img{
-        margin: 0;
+        margin: 0 0 2rem 0;
     }
     .pricing-flexbox{
         flex-direction: column-reverse;
+    }
+    .pr-f{
+        max-width: 67%;
+    }
+    .pricing-img-box{
+        width: 100%;
     }
 }
 
@@ -192,6 +198,10 @@
     .site-panel:hover{
         box-shadow: none;
     }
+    .pr-f{
+        max-width: 100%;
+    }
+
 }
 
 @media (max-height: 600px){

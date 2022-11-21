@@ -57,7 +57,7 @@
     <section>
       <div class="container">
         <div class="home-flexbox" style="overflow: hidden">
-          <div style="width: fit-content" data-aos="fade-up" data-aos-delay="150" data-aos-duration="600">
+          <div class="pr-f" data-aos="fade-up" data-aos-delay="150" data-aos-duration="600">
             <form class="pricing-form contact-form">
               <div class="pricing-flexbox">
                 <div class="input-list">
@@ -72,7 +72,12 @@
                     <vs-radio class="radio-option" color="#7b98ff" v-model="radios2" vs-value="Premium">Premium</vs-radio>
                   </div>
                   <div class="checkbox-f">
-                    <vs-checkbox v-model="checkBox1">I agree to the <span style="color: #7b98ff">processing of personal data</span></vs-checkbox>
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <label class="form-check-label" for="flexCheckDefault">
+                        I agree to the <span style="color: #7b98ff">processing of personal data</span>
+                      </label>
+                    </div>
                   </div>
                   <div class="btn-f">
                     <form class="projects-btn-f">
@@ -104,6 +109,7 @@ export default {
       widthx:25,
       heightx:25,
       radios2:'Select a rate',
+      checkBox1:false,
     }
   },
   methods:{
@@ -119,40 +125,3 @@ export default {
 <style scoped>
 
 </style>
-
-<!--<div class="title-box">-->
-<!--<h1 class="title-lg-row" style="margin: 0">STANDARD</h1>-->
-<!--</div>-->
-<!--<div class="title-desc-box">-->
-<!--<ul class="features-list">-->
-<!--  <li><i class="bi bi-check-circle-fill"></i><p>Quick start within one day</p></li>-->
-<!--  <li><i class="bi bi-check-circle-fill"></i><p>No equipment and support costs</p></li>-->
-<!--  <li><i class="bi bi-check-circle-fill"></i><p>Personal data privacy</p></li>-->
-<!--  <li><i class="bi bi-check-circle-fill"></i><p>The price depends on the number of customer profiles</p></li>-->
-<!--</ul>-->
-<!--<p class="num-text">Number of customer profiles</p>-->
-<!--<vs-slider :min="5" @change="cambio" color="#7b98ff" step=25 text-fixed=K v-model="value1"/>-->
-<!--<div style="text-align: center;">-->
-<!--  <h3 style="margin: 1.325rem 0;">{{value2}}$/month</h3>-->
-<!--</div>-->
-<!--<p class="desc-sm">All payments in Dollars are subject to a 15% commission for acquiring services.-->
-<!--  Unfortunately, this is out of our control and there is nothing we can do about it. But you can always-->
-<!--  use Rubles or Yuan to pay without commission-->
-<!--</p>-->
-<!--</div>-->
-
-<!--            <div class="pricing-item">-->
-<!--              <div class="title-box">-->
-<!--                <h1 class="title-lg-row" style="margin: 0">PREMIUM</h1>-->
-<!--              </div>-->
-<!--              <div class="title-desc-box">-->
-<!--                <ul class="features-list">-->
-
-<!--                </ul>-->
-<!--                <p class="num-text">Number of customer profiles</p>-->
-<!--                <vs-slider disabled="true" @change="cambio" color="#7b98ff" v-model="value3"/>-->
-<!--                <div style="text-align: center;">-->
-<!--                  <h3 style="margin: 1.325rem 0 0 0;">Request for price</h3>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->

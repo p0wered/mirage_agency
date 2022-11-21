@@ -579,7 +579,7 @@ footer{
 }
 
 .contact-form:hover{
-    transform: scale(103%);
+    transform: scale(102%);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
 }
 
@@ -757,7 +757,7 @@ footer{
 .pricing-form{
     display: flex;
     flex-direction: row;
-    margin: 1rem 1rem 3rem 1rem;
+    margin: 1rem 0 3rem 0;
 }
 
 .pricing-flexbox{
@@ -787,7 +787,7 @@ footer{
 
 .option-select {
     background-color: #ffffff;
-    color: #a3a4b6;
+    color: #56597a;
 }
 
 .radio-box{
@@ -800,4 +800,12 @@ footer{
     margin: 0.625rem;
     font-size: 18px;
     font-weight: 700;
+}
+
+.pr-f{
+    max-width: 86%;
+}
+
+.form-check-input{
+    transition: 300ms;
 }
