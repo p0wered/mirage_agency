@@ -218,6 +218,7 @@ nav h1:active{
 
 .mobile-routes a:hover{
     color: #7b98ff;
+    text-decoration: underline;
 }
 
 .hs-1{
@@ -498,7 +499,7 @@ footer{
 }
 
 .projects-section{
-    padding-top: 5rem;
+    padding-top: 6rem;
 }
 
 .projects-flexbox{
@@ -618,7 +619,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    margin: 1rem 0 2rem 0;
+    padding: 1rem 0 2rem 0;
 }
 
 .contact-desc{
@@ -756,7 +757,7 @@ footer{
 .pricing-form{
     display: flex;
     flex-direction: row;
-    margin: 1rem 0 3rem 0;
+    margin: 1rem 1rem 3rem 1rem;
 }
 
 .pricing-flexbox{
@@ -778,4 +779,25 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.pricing-img:hover{
+    transform: scale(103%);
+}
+
+.option-select {
+    background-color: #ffffff;
+    color: #a3a4b6;
+}
+
+.radio-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.radio-option{
+    margin: 0.625rem;
+    font-size: 18px;
+    font-weight: 700;
 }

@@ -56,16 +56,21 @@
     </section>
     <section>
       <div class="container">
-        <div class="home-flexbox">
-          <div>
+        <div class="home-flexbox" style="overflow: hidden">
+          <div style="width: fit-content" data-aos="fade-up" data-aos-delay="150" data-aos-duration="600">
             <form class="pricing-form contact-form">
               <div class="pricing-flexbox">
-                <div>
+                <div class="input-list">
                   <h4 class="contact-form-title">Get more information</h4>
                   <input class="contact-input" type="text" placeholder="Full Name">
                   <input class="contact-input" type="text" placeholder="Job Title">
-                  <input class="contact-input" type="email" placeholder="Business Email">
-                  <input class="contact-input" type="tel" placeholder="Phone">
+                  <input class="contact-input" type="email" required placeholder="Business Email">
+                  <input class="contact-input" type="tel" required placeholder="Phone">
+                  <div class="contact-input option-select">{{radios2}}</div>
+                  <div class="radio-box">
+                    <vs-radio class="radio-option" color="#7b98ff" v-model="radios2" vs-value="Standard">Standard</vs-radio>
+                    <vs-radio class="radio-option" color="#7b98ff" v-model="radios2" vs-value="Premium">Premium</vs-radio>
+                  </div>
                   <div class="checkbox-f">
                     <vs-checkbox v-model="checkBox1">I agree to the <span style="color: #7b98ff">processing of personal data</span></vs-checkbox>
                   </div>
@@ -97,7 +102,8 @@ export default {
       value2:120,
       value3: 100,
       widthx:25,
-      heightx:25
+      heightx:25,
+      radios2:'Select a rate',
     }
   },
   methods:{
