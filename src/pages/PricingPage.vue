@@ -95,6 +95,10 @@
         </div>
       </div>
     </section>
+    <footer>
+      <i class="bi bi-c-circle"></i>
+      <p style="margin: 0 0 0 1rem">All Rights Served By MIRAGE {{new Date().getFullYear()}}</p>
+    </footer>
   </div>
 </template>
 

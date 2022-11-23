@@ -156,30 +156,18 @@
     .pricing-img-box{
         width: 100%;
     }
-}
-
-@media (max-width: 3840px){
     .slider-container{
-        max-width: 51.3333%;
+        max-width: 100%;
     }
 }
 
-@media (max-width: 1920px){
+@media (max-width: 1600px){
     .slider-container{
-        max-width: 73.3333%;
-    }
-}
-
-@media (max-width: 2560px){
-    .slider-container{
-        max-width:65.3333%;
+        max-width: 83.3333%;
     }
 }
 
 @media (min-width: 3840px){
-    .slider-container{
-        max-width:38.3333%;
-    }
     .hs-blog{
         background-image: none;
     }
