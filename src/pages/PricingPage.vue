@@ -73,7 +73,7 @@
                   </div>
                   <div class="checkbox-f">
                     <div class="form-check">
-                      <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                      <input @click="infoCheck" class="form-checkbox" type="checkbox" value="" id="flexCheckDefault">
                       <label class="form-check-label" for="flexCheckDefault">
                         I agree to the <span style="color: #7b98ff">processing of personal data</span>
                       </label>
@@ -81,7 +81,7 @@
                   </div>
                   <div class="btn-f">
                     <form class="projects-btn-f">
-                      <button class="main-btn projects-btn">SUBMIT</button>
+                      <button class="main-btn pricing-btn">SUBMIT</button>
                     </form>
                     <p class="contact-desc">We will contact you within the working day</p>
                   </div>
@@ -114,6 +114,7 @@ export default {
       heightx:25,
       radios2:'Select a rate',
       checkBox1:false,
+      checkBox2:false
     }
   },
   methods:{
@@ -121,6 +122,9 @@ export default {
       this.widthx = value
       this.heightx = value
       this.value2 = value * 20
+    },
+    infoCheck(){
+      this.checkBox2 = !this.checkBox2
     }
   }
 }

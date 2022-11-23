@@ -189,6 +189,12 @@
     .pr-f{
         max-width: 100%;
     }
+    .news-panel-row{
+        flex-direction: column;
+    }
+    .news-panel{
+        margin: 1rem 0 0 0;
+    }
 
 }
 

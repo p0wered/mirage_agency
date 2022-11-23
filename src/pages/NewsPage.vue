@@ -1,10 +1,31 @@
 <template>
-  <div style="padding: 6rem">
-    <vs-checkbox color="#720ea8" v-model="checkBox1">I agree to the <span style="color: #7b98ff">processing of personal data</span></vs-checkbox>
-    <div class="form-floating mb-3">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
-    </div>
+  <div>
+    <section class="news-section">
+      <div class="container">
+        <div class="news-flexbox">
+          <div class="news-text">
+            <h1 class="title-lg-row">Check our <span class="colorized">latest</span> news</h1>
+          </div>
+          <div class="news-panel-row">
+            <div class="news-panel col-md-10 col-lg-4">
+              <div class="news-panel-img"></div>
+              <h4>TITLE</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lobortis urna. Morbi iaculis molestie risus mattis scelerisque.</p>
+            </div>
+            <div class="news-panel col-md-10 col-lg-4">
+              <div class="news-panel-img"></div>
+              <h4>TITLE</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lobortis urna. Morbi iaculis molestie risus mattis scelerisque.</p>
+            </div>
+            <div class="news-panel col-md-10 col-lg-4">
+              <div class="news-panel-img"></div>
+              <h4>TITLE</h4>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lobortis urna. Morbi iaculis molestie risus mattis scelerisque.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 

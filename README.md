@@ -1,5 +1,7 @@
-# vue-it
+# Mirage - Creative Agency Website
 
+## Front-end Project
+```
 ## Project setup
 ```
 npm install

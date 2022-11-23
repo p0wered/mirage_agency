@@ -103,7 +103,12 @@
                 <input class="contact-input input-number" type="tel" placeholder="Phone">
               </div>
               <div class="checkbox-f">
-                <vs-checkbox v-model="checkBox1">I agree to the <span style="color: #7b98ff">processing of personal data</span></vs-checkbox>
+                <div class="form-check">
+                  <input @click="infoCheck" class="form-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                  <label class="form-check-label" for="flexCheckDefault">
+                    I agree to the <span style="color: #7b98ff">processing of personal data</span>
+                  </label>
+                </div>
               </div>
               <div class="btn-f">
                 <form class="projects-btn-f">
