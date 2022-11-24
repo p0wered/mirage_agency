@@ -862,16 +862,18 @@ footer{
     align-items: center;
     justify-content: center;
     flex-direction: row;
+    margin: 1rem;
 }
 
 .news-panel{
     background-color: rgba(201, 213, 255, 0.6);
-    padding: 2rem;
+    padding: 1.625rem;
     margin: 1rem;
     border-radius: 1.5rem;
     display: flex;
     flex-direction: column;
     transition: 300ms;
+    overflow: hidden;
 }
 
 .news-panel:hover{
@@ -879,21 +881,32 @@ footer{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.news-panel p{
+.news-flexbox p{
     margin: 0;
 }
 
 .news-panel-img{
-    width: 100%;
-    height: 20rem;
     background-image: url("../assets/TinkoffBackground.png");
     background-position: center;
-    background-size: cover;
+    background-size: 140%;
     border-radius: 0.625rem;
     margin-bottom: 1rem;
+    transition: 300ms;
+}
+
+.img-ratio-sm{
+    aspect-ratio: 1.3;
+}
+
+.img-ratio-lg{
+    aspect-ratio: 1.7;
+}
+
+.news-panel-img:hover{
+    background-size: 150%;
 }
 
 .news-text{
     text-align: center;
-    margin: 2rem 0 1.5rem 0;
+    margin-top: 2rem;
 }

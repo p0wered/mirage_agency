@@ -179,7 +179,7 @@
     }
 }
 
-@media (max-width: 992px){
+@media (max-width: 991px){
     .site-panel{
         margin: 0.425rem;
     }
@@ -195,7 +195,15 @@
     .news-panel{
         margin: 1rem 0 0 0;
     }
-
+    .news-panel-row{
+        margin: 0;
+    }
+    .news-panel h4{
+        font-size: 30px;
+    }
+    .news-panel p{
+        font-size: 20px;
+    }
 }
 
 @media (max-height: 600px){

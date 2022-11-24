@@ -7,21 +7,13 @@
             <h1 class="title-lg-row">Check our <span class="colorized">latest</span> news</h1>
           </div>
           <div class="news-panel-row">
-            <div class="news-panel col-md-10 col-lg-4">
-              <div class="news-panel-img"></div>
-              <h4>TITLE</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lobortis urna. Morbi iaculis molestie risus mattis scelerisque.</p>
-            </div>
-            <div class="news-panel col-md-10 col-lg-4">
-              <div class="news-panel-img"></div>
-              <h4>TITLE</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lobortis urna. Morbi iaculis molestie risus mattis scelerisque.</p>
-            </div>
-            <div class="news-panel col-md-10 col-lg-4">
-              <div class="news-panel-img"></div>
-              <h4>TITLE</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed lobortis urna. Morbi iaculis molestie risus mattis scelerisque.</p>
-            </div>
+            <NewsPanelSmall></NewsPanelSmall>
+            <NewsPanelSmall></NewsPanelSmall>
+            <NewsPanelSmall></NewsPanelSmall>
+          </div>
+          <div class="news-panel-row">
+            <NewsPanelLarge></NewsPanelLarge>
+            <NewsPanelLarge></NewsPanelLarge>
           </div>
         </div>
       </div>
@@ -30,11 +22,15 @@
 </template>
 
 <script>
+import NewsPanelSmall from "@/components/NewsPanelSmall";
+import NewsPanelLarge from "@/components/NewsPanelLarge";
 export default {
   name: "NewsPage",
+  components: {NewsPanelLarge, NewsPanelSmall},
   data(){
     return {
-      checkBox1:false
+      checkBox1:false,
+      panelName: 'TITLE'
     }
   }
 }
