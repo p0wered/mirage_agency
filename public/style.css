@@ -230,7 +230,7 @@ section{
     width: 100%;
     background-color: #f1f1f1;
     cursor: default;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 .home-flexbox{
@@ -448,7 +448,7 @@ section{
 
 .blog-input{
     font-size: 22px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(0, 0, 0, 0.08);
     border-radius: 1rem;
     padding: 1rem;
     transition: 300ms;
@@ -460,7 +460,7 @@ section{
 
 .blog-input:focus{
     transform: scale(103%);
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .main-btn{
@@ -682,7 +682,6 @@ footer{
 
 .pricing-section{
     padding-top: 5rem;
-    overflow: visible;
 }
 
 .pricing-text{
@@ -751,6 +750,7 @@ footer{
 
 .hf-pricing{
     align-items: flex-start;
+    margin-bottom: 1rem;
 }
 
 .desc-sm{
@@ -808,7 +808,7 @@ footer{
 }
 
 .pr-f{
-    max-width: 86%;
+    max-width: 81%;
 }
 
 .form-checkbox{
@@ -909,4 +909,25 @@ footer{
 .news-text{
     text-align: center;
     margin-top: 2rem;
+}
+
+.news-btn{
+    background-color: transparent;
+    font-size: 18px;
+    font-weight: 700;
+    border: none;
+    color: #7b98ff;
+    margin-top: 1rem;
+    transition: 300ms;
+}
+.news-btn:hover{
+    color: #b0c0ff;
+}
+
+.news-popup{
+    touch-action: none;
+}
+
+.vs-popup--background{
+    touch-action: none;
 }
