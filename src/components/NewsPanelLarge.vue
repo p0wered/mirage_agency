@@ -15,12 +15,9 @@
 <script>
 export default {
   name: "NewsPanelLarge",
+  props:['panelTitle','panelDesc','newsTitle','newsText'],
   data(){
     return{
-      panelTitle: 'TITLE',
-      panelDesc: 'This method helps you build a quality email list, increase email open rates and protect your brand from fines.',
-      newsTitle:'',
-      newsText:'',
       popupActivo:false
     }
   }

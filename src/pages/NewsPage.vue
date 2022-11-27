@@ -7,7 +7,7 @@
             <h1 class="title-lg-row">Check our <span class="colorized">latest</span> news</h1>
           </div>
           <div class="news-panel-row" data-aos="fade-left" data-aos-delay="150" data-aos-duration="600">
-            <NewsPanelSmall></NewsPanelSmall>
+            <NewsPanelSmall panel-title="HUI" news-title="ZALUPA"></NewsPanelSmall>
             <NewsPanelSmall></NewsPanelSmall>
             <NewsPanelSmall></NewsPanelSmall>
           </div>

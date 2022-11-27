@@ -881,6 +881,10 @@ footer{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
+.news-panel:hover .news-panel-img{
+    background-size: 200%;
+}
+
 .news-flexbox p{
     margin: 0;
 }
@@ -900,10 +904,6 @@ footer{
 
 .img-ratio-lg{
     aspect-ratio: 1.7;
-}
-
-.news-panel-img:hover{
-    background-size: 150%;
 }
 
 .news-text{

@@ -77,15 +77,16 @@
                   </div>
                   <div class="checkbox-f">
                     <div class="form-check">
-                      <input @click="infoCheck" class="form-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                      <input @click="infoCheck" class="form-checkbox" type="checkbox" id="flexCheckDefault">
                       <label class="form-check-label" for="flexCheckDefault">
                         I agree to the <span style="color: #7b98ff">processing of personal data</span>
                       </label>
                     </div>
+                    <small v-if="isError===true" style="color: red">ТЫ ЕБАН!!1!</small>
                   </div>
                   <div class="btn-f">
                     <form class="projects-btn-f">
-                      <button class="main-btn pricing-btn">SUBMIT</button>
+                      <button @click="validation" class="main-btn pricing-btn">SUBMIT</button>
                     </form>
                     <p class="contact-desc">We will contact you within the working day</p>
                   </div>
@@ -118,7 +119,8 @@ export default {
       heightx:25,
       radios2:'Select a rate',
       checkBox1:false,
-      checkBox2:false
+      checkBox2:false,
+      isError:false
     }
   },
   methods:{
@@ -129,6 +131,9 @@ export default {
     },
     infoCheck(){
       this.checkBox2 = !this.checkBox2
+    },
+    validation(){
+      this.isError = this.checkBox2 === false;
     }
   }
 }

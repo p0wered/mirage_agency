@@ -5,7 +5,7 @@
       <h4>{{panelTitle}}</h4>
       <p>{{panelDesc}}</p>
       <button class="news-btn" @click="popupActive=true">Read More</button>
-      <vs-popup class="holamundo" title="{{newsTitle}}" v-model:active="popupActive">
+      <vs-popup class="holamundo" :title="newsTitle" v-model:active="popupActive">
         <p>{{newsText}}</p>
       </vs-popup>
     </div>
@@ -15,12 +15,9 @@
 <script>
 export default {
   name: "NewsPanelSmall",
+  props:['panelTitle','panelDesc','newsTitle','newsText'],
   data(){
     return{
-      panelTitle:'TITLE',
-      panelDesc:'This method helps you build a quality email list, increase email open rates and protect your brand from fines.',
-      newsTitle:'',
-      newsText:'',
       popupActive:false,
     }
   }
