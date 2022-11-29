@@ -3,7 +3,7 @@
     <section class="pricing-section">
       <div class="container">
         <div class="pricing-text">
-          <h1 class="title-lg-row">Choose your <span class="colorized">rate</span></h1>
+          <h1 class="title-lg-row" data-aos="fade" data-aos-delay="150" data-aos-duration="600">Choose your <span class="colorized">rate</span></h1>
         </div>
         <div class="home-flexbox hf-pricing">
           <div data-aos="fade-right" data-aos-delay="150" data-aos-duration="600" class="col-12 col-lg-8 col-xl-5">
@@ -77,12 +77,11 @@
                   </div>
                   <div class="checkbox-f">
                     <div class="form-check">
-                      <input @click="infoCheck" class="form-checkbox" type="checkbox" id="flexCheckDefault">
+                      <InputCheckbox @click="infoCheck"></InputCheckbox>
                       <label class="form-check-label" for="flexCheckDefault">
                         I agree to the <span style="color: #7b98ff">processing of personal data</span>
                       </label>
                     </div>
-                    <small v-if="isError===true" style="color: red">ТЫ ЕБАН!!1!</small>
                   </div>
                   <div class="btn-f">
                     <form class="projects-btn-f">
@@ -108,8 +107,10 @@
 </template>
 
 <script>
+import InputCheckbox from "@/components/InputCheckbox";
 export default {
   name: "PricingPage",
+  components: {InputCheckbox},
   data(){
     return {
       value1:5,
@@ -134,6 +135,7 @@ export default {
     },
     validation(){
       this.isError = this.checkBox2 === false;
+
     }
   }
 }
