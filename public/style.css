@@ -901,3 +901,8 @@ footer{
 .vs-popup--background{
     touch-action: none;
 }
+
+.error-text{
+    color: rgba(255, 0, 0, 0.4);
+    transition: 300ms;
+}

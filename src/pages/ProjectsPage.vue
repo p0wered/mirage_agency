@@ -104,7 +104,7 @@
               </div>
               <div class="checkbox-f">
                 <div class="form-check">
-                  <input @click="infoCheck" class="form-checkbox" type="checkbox" value="" id="flexCheckDefault">
+                  <InputCheckbox @click="infoCheck"></InputCheckbox>
                   <label class="form-check-label" for="flexCheckDefault">
                     I agree to the <span style="color: #7b98ff">processing of personal data</span>
                   </label>

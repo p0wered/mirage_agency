@@ -4,9 +4,7 @@
 
 <script>
 export default {
-  name: "InputCheckbox",
-  props:['bg'],
-
+  name: "InputCheckbox"
 }
 </script>
 

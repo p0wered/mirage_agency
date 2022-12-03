@@ -2,8 +2,8 @@
   <div>
     <section class="pricing-section">
       <div class="container">
-        <div class="pricing-text">
-          <h1 class="title-lg-row" data-aos="fade" data-aos-delay="150" data-aos-duration="600">Choose your <span class="colorized">rate</span></h1>
+        <div class="pricing-text" data-aos="fade" data-aos-delay="150" data-aos-duration="600">
+          <h1 class="title-lg-row" >Choose your <span class="colorized">rate</span></h1>
         </div>
         <div class="home-flexbox hf-pricing">
           <div data-aos="fade-right" data-aos-delay="150" data-aos-duration="600" class="col-12 col-lg-8 col-xl-5">
@@ -77,7 +77,7 @@
                   </div>
                   <div class="checkbox-f">
                     <div class="form-check">
-                      <InputCheckbox @click="infoCheck"></InputCheckbox>
+                      <InputCheckbox @click="infoCheck" :style="{'color':isError}"></InputCheckbox>
                       <label class="form-check-label" for="flexCheckDefault">
                         I agree to the <span style="color: #7b98ff">processing of personal data</span>
                       </label>
@@ -108,6 +108,7 @@
 
 <script>
 import InputCheckbox from "@/components/InputCheckbox";
+import {error} from "@babel/eslint-parser/lib/convert";
 export default {
   name: "PricingPage",
   components: {InputCheckbox},
@@ -125,6 +126,9 @@ export default {
     }
   },
   methods:{
+    error() {
+      return error
+    },
     cambio(value){
       this.widthx = value
       this.heightx = value
