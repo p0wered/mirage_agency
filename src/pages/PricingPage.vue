@@ -108,7 +108,6 @@
 
 <script>
 import InputCheckbox from "@/components/InputCheckbox";
-import {error} from "@babel/eslint-parser/lib/convert";
 export default {
   name: "PricingPage",
   components: {InputCheckbox},
@@ -126,9 +125,6 @@ export default {
     }
   },
   methods:{
-    error() {
-      return error
-    },
     cambio(value){
       this.widthx = value
       this.heightx = value

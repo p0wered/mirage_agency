@@ -1,11 +1,11 @@
 <template>
   <div class="news-panel">
-    <div class="news-panel-img img-ratio-sm"></div>
+    <div class="news-panel-img img-ratio"></div>
     <div>
       <h4>{{panelTitle}}</h4>
-      <p>{{panelDesc}}</p>
-      <button class="news-btn" @click="popupActive=true">Read More</button>
-      <vs-popup class="holamundo" :title="newsTitle" v-model:active="popupActive">
+      <p class="text-lim-4">{{panelDesc}}</p>
+      <button class="news-btn" @click="popupActivo=true">Read More</button>
+      <vs-popup class="holamundo" :title="panelTitle" v-model:active="popupActivo">
         <p>{{newsText}}</p>
       </vs-popup>
     </div>
@@ -18,7 +18,7 @@ export default {
   props:['panelTitle','panelDesc','newsTitle','newsText'],
   data(){
     return{
-      popupActive:false,
+      popupActivo:false,
     }
   }
 }

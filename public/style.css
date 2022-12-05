@@ -368,9 +368,12 @@ section{
     font-weight: 500;
 }
 
+.block-row-item:hover a{
+    color: #f1f1f1;
+}
+
 .block-row-item a:hover{
     text-decoration: underline;
-    color: #f1f1f1;
 }
 
 .hf-2{
@@ -868,11 +871,7 @@ footer{
     transition: 300ms;
 }
 
-.img-ratio-sm{
-    aspect-ratio: 1.3;
-}
-
-.img-ratio-lg{
+.img-ratio{
     aspect-ratio: 1.7;
 }
 
@@ -905,4 +904,12 @@ footer{
 .error-text{
     color: rgba(255, 0, 0, 0.4);
     transition: 300ms;
+}
+
+.text-lim-4{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    -webkit-box-orient: vertical;
 }

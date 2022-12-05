@@ -11,6 +11,7 @@
     "@egjs/flicking-plugins": "^4.4.0",
     "@egjs/vue3-flicking": "^4.10.2",
     "aos": "^2.3.4",
+    "axios": "^1.2.0",
     "bootstrap": "^5.2.2",
     "core-js": "^3.8.3",
     "material-icons": "^1.12.1",
@@ -22,7 +23,7 @@
     "vuesax3": "^4.1.0"
   },
   "devDependencies": {
-    "@babel/core": "^7.19.1",
+    "@babel/core": "^7.20.5",
     "@babel/eslint-parser": "^7.19.1",
     "@vue/cli-plugin-babel": "~5.0.0",
     "@vue/cli-plugin-eslint": "~5.0.0",
