@@ -6,9 +6,9 @@
           <div class="news-text">
             <h1 class="title-lg-row">Check our <span class="colorized">latest</span> news</h1>
           </div>
-          <div class="news-panel-row" data-aos="fade-left" data-aos-delay="150" data-aos-duration="600">
+          <div class="news-panel-row panel-sm" data-aos="fade-left" data-aos-delay="150" data-aos-duration="600">
             <template v-for="item in news1" :key="item">
-              <NewsPanelSmall class="col-12 col-md-8 col-lg-4" :panel-title="item.title" :panel-desc="item.description"></NewsPanelSmall>
+              <NewsPanelSmall class="col-12 col-md-8 col-lg-4" :panel-title="item.title" :panel-desc="item.description" :news-text="item.text"></NewsPanelSmall>
             </template>
           </div>
           <div class="news-panel-row" data-aos="fade-right" data-aos-delay="150" data-aos-duration="600">
@@ -16,7 +16,7 @@
               <NewsPanelLarge class="col-12 col-md-8 col-lg-6" :panel-title="item.title" :panel-desc="item.description"></NewsPanelLarge>
             </template>
           </div>
-          <div class="news-panel-row" data-aos="fade-left" data-aos-delay="150" data-aos-duration="600">
+          <div class="news-panel-row panel-sm" data-aos="fade-left" data-aos-delay="150" data-aos-duration="600">
             <template v-for="item in news3" :key="item">
               <NewsPanelLarge class="col-12 col-md-8 col-lg-4" :panel-title="item.title" :panel-desc="item.description"></NewsPanelLarge>
             </template>

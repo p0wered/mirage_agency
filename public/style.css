@@ -79,9 +79,13 @@ nav a{
 
 nav a:hover{
     transition: 300ms;
-    text-decoration: underline;
     color: #7b98ff;
 
+}
+
+.router-link-active{
+    color: #7b98ff;
+    text-decoration: underline;
 }
 
 nav h1{
@@ -832,10 +836,12 @@ footer{
 
 .news-panel-row{
     display: flex;
-    align-items: center;
     justify-content: center;
     flex-direction: row;
-    margin: 1rem;
+}
+
+.panel-sm{
+    margin: 0 1rem 0 1rem;
 }
 
 .news-panel{
@@ -895,6 +901,11 @@ footer{
 
 .news-popup{
     touch-action: none;
+}
+
+.vs-popup--title h3{
+    font-size: 1rem;
+    margin: 0;
 }
 
 .vs-popup--background{

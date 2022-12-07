@@ -5,7 +5,7 @@
       <h4>{{panelTitle}}</h4>
       <p class="text-lim-4">{{panelDesc}}</p>
       <button class="news-btn" @click="popupActivo=true">Read More</button>
-      <vs-popup class="holamundo" :title="newsTitle" v-model:active="popupActivo">
+      <vs-popup style="color: #56597a" class="holamundo" :title="panelTitle" :background-color-popup="colorx" background-color="rgba(0,0,0,.6)" v-model:active="popupActivo">
         <p>{{newsText}}</p>
       </vs-popup>
     </div>
