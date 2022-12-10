@@ -260,6 +260,7 @@ section{
 }
 
 .title-lg-left{
+    width: fit-content;
     transition: 300ms;
     font-size: calc(29px + 1vw);
 }
@@ -432,7 +433,7 @@ section{
 .hf-blog{
     text-align: center;
     flex-direction: column;
-    padding: 2rem 0 2rem 0;
+    padding: 2rem 0 4rem 0;
 }
 
 .desc-row{
@@ -505,7 +506,6 @@ footer{
     width: 100%;
     padding: 1.325rem;
     background-color: #7b98ff;
-    border-top: 1px solid rgba(66, 66, 66, 0.14);
 }
 
 .projects-section{
@@ -832,6 +832,7 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
+    padding-bottom: 1rem;
 }
 
 .news-panel-row{
@@ -860,28 +861,28 @@ footer{
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
-.news-panel:hover .news-panel-img{
-    background-size: 200%;
-}
-
 .news-flexbox p{
     margin: 0;
 }
 
 .news-panel-img{
-    background-image: url("../assets/TinkoffBackground.png");
+    background-image: url("../assets/placeholder.webp");
     background-position: center;
-    background-size: 140%;
+    background-size: 100%;
     border-radius: 0.625rem;
     margin-bottom: 1rem;
     transition: 300ms;
+}
+
+.news-panel:hover .news-panel-img{
+    background-size: 110%;
 }
 
 .img-ratio{
     aspect-ratio: 1.7;
 }
 
-.news-text{
+.section-text{
     text-align: center;
     margin-top: 2rem;
 }
@@ -896,7 +897,7 @@ footer{
     transition: 300ms;
 }
 .news-btn:hover{
-    color: #b0c0ff;
+    color: #637cd5;
 }
 
 .news-popup{
@@ -904,7 +905,6 @@ footer{
 }
 
 .vs-popup--title h3{
-    font-size: 1rem;
     margin: 0;
 }
 
@@ -923,4 +923,60 @@ footer{
     -webkit-line-clamp: 4;
     line-clamp: 4;
     -webkit-box-orient: vertical;
+}
+
+.popup-flexbox{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 10rem;
+}
+
+.placeholder-image{
+    width: 100%;
+    aspect-ratio: 16/9;
+    background-image: url("../assets/placeholder.webp");
+    background-size:cover;
+    background-position: center;
+}
+
+.contacts-section{
+    height: 100vh;
+}
+
+.contacts-flexbox{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.contacts-list-flexbox{
+    display: flex;
+    flex-direction: row;
+}
+
+.contacts-list{
+    padding: 0;
+    list-style: none;
+    width: 100%;
+}
+
+.list-pair{
+    display: flex;
+    flex-direction: row;
+}
+
+.text-wide{
+    margin: 3rem 0;
+}
+
+.text-wide a{
+    text-decoration: none;
+    color: #7b98ff;
+    transition: 300ms;
+}
+
+.text-wide a:hover{
+    color: #637cd5;
 }
