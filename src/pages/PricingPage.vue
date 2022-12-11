@@ -59,8 +59,8 @@
       </div>
     </section>
     <section>
-      <div class="container">
-        <div class="home-flexbox" style="overflow: hidden">
+      <div class="container media-c">
+        <div class="home-flexbox col-12 col-lg-10 col-xl-12">
           <div class="pr-f" data-aos="fade-up" data-aos-delay="150" data-aos-duration="600">
             <form class="pricing-form contact-form">
               <div class="pricing-flexbox">

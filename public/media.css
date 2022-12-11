@@ -170,6 +170,20 @@
     .popup-flexbox{
         padding: 0 3rem;
     }
+    .list-pair{
+        flex-direction: column;
+    }
+    .text-wide{
+        margin: 1rem 0;
+        padding: 0.325rem 0;
+    }
+    .contacts-section{
+        padding-top: 5rem;
+        height: auto;
+    }
+    .contacts-flexbox{
+        height: auto;
+    }
 }
 
 @media (max-width: 1199px){
@@ -196,8 +210,8 @@
     .pricing-flexbox{
         flex-direction: column-reverse;
     }
-    .pr-f{
-        max-width: 67%;
+    .pricing-panel{
+        margin: 1rem 0;
     }
     .pricing-img-box{
         width: 100%;

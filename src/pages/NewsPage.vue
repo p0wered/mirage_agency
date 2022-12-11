@@ -3,22 +3,22 @@
     <section class="news-section">
       <div class="container">
         <div class="news-flexbox">
-          <div class="section-text">
+          <div class="news-text">
             <h1 class="title-lg-row">Check our <span class="colorized">latest</span> news</h1>
           </div>
           <div class="news-panel-row panel-sm" data-aos="fade-left" data-aos-delay="150" data-aos-duration="600">
             <template v-for="item in news1" :key="item">
-              <NewsPanelSmall class="col-12 col-md-8 col-lg-4" :panel-title="item.title" :panel-desc="item.description" :news-text="item.text"></NewsPanelSmall>
+              <NewsPanel class="col-12 col-md-8 col-lg-4" :panel-title="item.title" :panel-desc="item.description" :news-text="item.text"></NewsPanel>
             </template>
           </div>
           <div class="news-panel-row" data-aos="fade-right" data-aos-delay="150" data-aos-duration="600">
             <template v-for="item in news2" :key="item">
-              <NewsPanelLarge class="col-12 col-md-8 col-lg-6" :panel-title="item.title" :panel-desc="item.description" :news-text="item.text"></NewsPanelLarge>
+              <NewsPanel class="col-12 col-md-8 col-lg-6" :panel-title="item.title" :panel-desc="item.description" :news-text="item.text"></NewsPanel>
             </template>
           </div>
           <div class="news-panel-row panel-sm" data-aos="fade-left" data-aos-delay="150" data-aos-duration="600">
             <template v-for="item in news3" :key="item">
-              <NewsPanelLarge class="col-12 col-md-8 col-lg-4" :panel-title="item.title" :panel-desc="item.description" :news-text="item.text"></NewsPanelLarge>
+              <NewsPanel class="col-12 col-md-8 col-lg-4" :panel-title="item.title" :panel-desc="item.description" :news-text="item.text"></NewsPanel>
             </template>
           </div>
         </div>
@@ -46,11 +46,10 @@
 
 <script>
 import axios from "axios";
-import NewsPanelSmall from "@/components/NewsPanelSmall";
-import NewsPanelLarge from "@/components/NewsPanelLarge.vue";
+import NewsPanel from "@/components/NewsPanel.vue";
 export default {
   name: "NewsPage",
-  components: {NewsPanelLarge, NewsPanelSmall},
+  components: {NewsPanel},
   mounted() {
     axios.get("backend/news/data.json").then(({data}) => {
       this.news1 = data.data1

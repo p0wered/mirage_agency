@@ -19,7 +19,7 @@
 
 <script>
 export default {
-  name: "NewsPanelSmall",
+  name: "NewsPanel",
   props:['panelTitle','panelDesc','newsTitle','newsText'],
   data(){
     return{
