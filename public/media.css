@@ -211,7 +211,7 @@
         flex-direction: column-reverse;
     }
     .pricing-panel{
-        margin: 1rem 0;
+        margin: .5rem 0;
     }
     .pricing-img-box{
         width: 100%;
@@ -221,13 +221,13 @@
     }
 }
 
-@media (max-width: 1200px){
+@media (min-width: 0) and (max-width: 1200px){
     .slider-container{
         max-width: 100%;
     }
 }
 
-@media (max-width: 1600px){
+@media (min-width: 1201px) and (max-width: 1600px){
     .slider-container{
         max-width: 83.3333%;
     }

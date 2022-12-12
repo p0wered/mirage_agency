@@ -943,6 +943,8 @@ footer{
 
 .contacts-section{
     height: 100vh;
+    background-size: auto;
+    background-position: bottom;
 }
 
 .contacts-text{
@@ -962,6 +964,7 @@ footer{
     display: flex;
     flex-direction: row;
 }
+
 
 .contacts-list{
     padding: 0;
