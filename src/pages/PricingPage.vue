@@ -77,7 +77,7 @@
                   </div>
                   <div class="checkbox-f">
                     <div class="form-check">
-                      <InputCheckbox @click="infoCheck" :style="{'color':isError}"></InputCheckbox>
+                      <InputCheckbox></InputCheckbox>
                       <label class="form-check-label" for="flexCheckDefault">
                         I agree to the <span style="color: #7b98ff">processing of personal data</span>
                       </label>
@@ -121,7 +121,6 @@ export default {
       radios2:'Select a rate',
       checkBox1:false,
       checkBox2:false,
-      isError:false
     }
   },
   methods:{
@@ -133,10 +132,6 @@ export default {
     infoCheck(){
       this.checkBox2 = !this.checkBox2
     },
-    validation(){
-      this.isError = this.checkBox2 === false;
-
-    }
   }
 }
 </script>

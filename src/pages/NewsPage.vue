@@ -3,7 +3,7 @@
     <section class="news-section">
       <div class="container">
         <div class="news-flexbox">
-          <div class="news-text">
+          <div class="news-text" data-aos="fade" data-aos-delay="150" data-aos-duration="600">
             <h1 class="title-lg-row">Check our <span class="colorized">latest</span> news</h1>
           </div>
           <div class="news-panel-row panel-sm" data-aos="fade-left" data-aos-delay="150" data-aos-duration="600">

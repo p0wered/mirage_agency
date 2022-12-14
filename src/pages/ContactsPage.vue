@@ -3,11 +3,11 @@
     <section class="contacts-section">
       <div class="container">
         <div class="contacts-flexbox">
-          <div class="contacts-text">
+          <div class="contacts-text" data-aos="fade" data-aos-delay="150" data-aos-duration="600">
             <h1 class="title-lg-left">Get in touch with <span class="colorized">Mirage</span></h1>
           </div>
           <div class="contacts-list-flexbox">
-            <div class="contacts-list">
+            <div class="contacts-list" data-aos="fade-right" data-aos-delay="150" data-aos-duration="600">
               <div class="list-pair">
                 <div class="col-12 col-lg-6"><h3 class="text-wide">Email:</h3></div>
                 <div class="col-12 col-lg-6"><h3 class="text-wide"><a href="mailto:contact@mirage.com">contact@mirage.com</a></h3></div>

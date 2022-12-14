@@ -104,7 +104,7 @@
               </div>
               <div class="checkbox-f">
                 <div class="form-check">
-                  <InputCheckbox @click="infoCheck"></InputCheckbox>
+                  <InputCheckbox></InputCheckbox>
                   <label class="form-check-label" for="flexCheckDefault">
                     I agree to the <span style="color: #7b98ff">processing of personal data</span>
                   </label>
@@ -132,9 +132,11 @@
 import Flicking from "@egjs/vue3-flicking/dist/flicking.esm";
 import { Arrow } from "@egjs/flicking-plugins";
 import "@egjs/flicking-plugins/dist/arrow.css";
+import InputCheckbox from "@/components/InputCheckbox.vue";
 export default {
   name: "ProjectsPage",
   components: {
+    InputCheckbox,
     Flicking
   },
   el: '#app',

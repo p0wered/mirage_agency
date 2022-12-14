@@ -507,6 +507,8 @@ footer{
     width: 100%;
     padding: 1.325rem;
     background-color: #7b98ff;
+    overflow: hidden;
+    height: 7vh;
 }
 
 .projects-section{
@@ -942,14 +944,16 @@ footer{
 }
 
 .contacts-section{
-    height: 100vh;
-    background-size: auto;
-    background-position: bottom;
+    padding-top: 5rem;
+    height: 93vh;
+    display: flex;
+    align-items: center;
+    background-image: url("../assets/blob_scene.svg");
+    background-size: cover;
 }
 
 .contacts-text{
     text-align: left;
-    margin-top: 2rem;
 }
 
 .contacts-flexbox{
@@ -957,14 +961,12 @@ footer{
     justify-content: center;
     flex-direction: column;
     padding: 1rem;
-    height: 100vh;
 }
 
 .contacts-list-flexbox{
     display: flex;
     flex-direction: row;
 }
-
 
 .contacts-list{
     padding: 0;
