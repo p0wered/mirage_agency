@@ -5,11 +5,11 @@
       <h4>{{panelTitle}}</h4>
       <p class="text-lim-4">{{panelDesc}}</p>
       <button class="news-btn" @click="popupActivo=true">Read More</button>
-      <vs-popup fullscreen style="color: #56597a" class="holamundo" title="" :background-color-popup="colorx" background-color="rgba(0,0,0,.6)" v-model:active="popupActivo">
+      <vs-popup style="color: #56597a" class="holamundo" title="" :background-color-popup="colorx" background-color="rgba(0,0,0,.6)" v-model:active="popupActivo">
         <div class="container">
           <div class="popup-flexbox">
             <div class="placeholder-image"></div>
-            <p>{{newsText}}</p>
+            <p style="margin: 1rem 0">{{newsText}}</p>
           </div>
         </div>
       </vs-popup>

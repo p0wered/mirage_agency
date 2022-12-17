@@ -167,9 +167,6 @@
     .news-panel p{
         font-size: 16px;
     }
-    .popup-flexbox{
-        padding: 0 3rem;
-    }
     .list-pair{
         flex-direction: column;
     }
@@ -232,7 +229,7 @@
     }
 }
 
-@media (max-height: 863px) and (max-width: 991px){
+@media (max-height: 850px) and (max-width: 991px){
     .contacts-section{
         height: auto;
     }

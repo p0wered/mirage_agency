@@ -86,7 +86,7 @@ nav a:hover{
 
 .router-link-active{
     color: #7b98ff;
-    text-decoration: underline;
+    font-weight: bold;
 }
 
 nav h1{
@@ -426,7 +426,7 @@ section{
     min-height: 26.333rem;
     display: flex;
     align-items: center;
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1920' height='450' preserveAspectRatio='none' viewBox='0 0 1920 450'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1043%26quot%3b)' fill='none'%3e%3crect width='1920' height='450' x='0' y='0' fill='rgba(241%2c 241%2c 241%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c115 C 128%2c100.2 384%2c22.4 640%2c41 C 896%2c59.6 1024%2c200.2 1280%2c208 C 1536%2c215.8 1792%2c105.6 1920%2c80L1920 450L0 450z' fill='rgba(212%2c 221%2c 255%2c 0.6)'%3e%3c/path%3e%3cpath d='M 0%2c397 C 128%2c367.6 384%2c251.6 640%2c250 C 896%2c248.4 1024%2c385 1280%2c389 C 1536%2c393 1792%2c293.8 1920%2c270L1920 450L0 450z' fill='rgba(123%2c 152%2c 255%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1043'%3e%3crect width='1920' height='450' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+    background-image: url("../assets/waves.svg");
     background-size: cover;
     overflow-x: hidden;
 }
@@ -932,7 +932,6 @@ footer{
     display: flex;
     align-items: center;
     flex-direction: column;
-    padding: 0 10rem;
 }
 
 .placeholder-image{
@@ -941,15 +940,19 @@ footer{
     background-image: url("../assets/placeholder.webp");
     background-size:cover;
     background-position: center;
+    border: 1px solid #0000001f;
+    border-radius: 0.325rem;
 }
 
 .contacts-section{
+    width: 100%;
     padding-top: 5rem;
-    height: 93vh;
+    height: 100vh;
     display: flex;
     align-items: center;
     background-image: url("../assets/blob_scene.svg");
     background-size: cover;
+    background-position: center;
 }
 
 .contacts-text{
