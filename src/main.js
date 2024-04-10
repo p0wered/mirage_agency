@@ -8,7 +8,7 @@ import "@egjs/vue3-flicking/dist/flicking.css";
 import "@egjs/flicking-plugins/dist/arrow.css";
 import Vuesax from 'vuesax3'
 import 'vuesax3/dist/vuesax.css'
-import 'material-icons/iconfont/material-icons.css';
+import 'material-icons/iconfont/material-icons.css'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 AOS.init();
